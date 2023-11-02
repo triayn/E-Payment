@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.5" version="18.5" Modules="professional" RootPath="." Language="en" Id="{B1905337-A0D0-4E29-BDA3-19BE71270440}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2023" ValueLocId="-"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="e-Payment"/>
+    <ROW Property="ProductCode" Value="1033:{62F2E9D8-0ED6-44CE-BF46-A9742E71D6CE} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="e-Payment"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{308188EB-0C91-49BA-BADA-F72EA1E1BE65}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Barcode_1_Dir" Directory_Parent="src_Dir" DefaultDir="Barcode"/>
+    <ROW Directory="Barcode_Dir" Directory_Parent="classes_Dir" DefaultDir="Barcode"/>
+    <ROW Directory="Cetak_1_Dir" Directory_Parent="src_Dir" DefaultDir="Cetak"/>
+    <ROW Directory="Cetak_Dir" Directory_Parent="classes_Dir" DefaultDir="Cetak"/>
+    <ROW Directory="Frame_1_Dir" Directory_Parent="src_Dir" DefaultDir="Frame"/>
+    <ROW Directory="Frame_Dir" Directory_Parent="classes_Dir" DefaultDir="Frame"/>
+    <ROW Directory="Image_1_Dir" Directory_Parent="src_Dir" DefaultDir="Image"/>
+    <ROW Directory="Image_Dir" Directory_Parent="classes_Dir" DefaultDir="Image"/>
+    <ROW Directory="Informasi_1_Dir" Directory_Parent="src_Dir" DefaultDir="INFORM~1|Informasi"/>
+    <ROW Directory="Informasi_Dir" Directory_Parent="classes_Dir" DefaultDir="INFORM~1|Informasi"/>
+    <ROW Directory="Karyawan_1_Dir" Directory_Parent="src_Dir" DefaultDir="Karyawan"/>
+    <ROW Directory="Karyawan_Dir" Directory_Parent="classes_Dir" DefaultDir="Karyawan"/>
+    <ROW Directory="Main_1_Dir" Directory_Parent="src_Dir" DefaultDir="Main"/>
+    <ROW Directory="Main_Dir" Directory_Parent="classes_Dir" DefaultDir="Main"/>
+    <ROW Directory="Owner_1_Dir" Directory_Parent="src_Dir" DefaultDir="Owner"/>
+    <ROW Directory="Owner_Dir" Directory_Parent="classes_Dir" DefaultDir="Owner"/>
+    <ROW Directory="PopUp_1_Dir" Directory_Parent="src_Dir" DefaultDir="PopUp"/>
+    <ROW Directory="PopUp_Dir" Directory_Parent="classes_Dir" DefaultDir="PopUp"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="build_Dir" Directory_Parent="ePayment_Dir" DefaultDir="build"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes"/>
+    <ROW Directory="dist_Dir" Directory_Parent="ePayment_Dir" DefaultDir="dist"/>
+    <ROW Directory="ePayment_Dir" Directory_Parent="APPDIR" DefaultDir="ePayment"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="ePayment_Dir" DefaultDir="NBPROJ~1|nbproject"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private"/>
+    <ROW Directory="src_Dir" Directory_Parent="ePayment_Dir" DefaultDir="src"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{4D655D31-3CAB-44B8-94FA-BDBB51035C38}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{623B16B0-7D5B-4286-AAA9-8AE00974BB5F}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AbsoluteLayout.jar" ComponentId="{3D3704B3-343D-4D87-B0E9-534C2DFA1E55}" Directory_="lib_Dir" Attributes="0" KeyPath="AbsoluteLayout.jar" Type="0"/>
+    <ROW Component="BASRENG0001.png" ComponentId="{41F12FEA-B2CE-482C-BF7B-B18BF9C8798F}" Directory_="Barcode_Dir" Attributes="0" KeyPath="BASRENG0001.png" Type="0"/>
+    <ROW Component="BASRENG0001.png_1" ComponentId="{2D4FB4F2-3680-498D-A5BC-200E45C2A664}" Directory_="Barcode_1_Dir" Attributes="0" KeyPath="BASRENG0001.png_1" Type="0"/>
+    <ROW Component="BarChartPendapatan.class" ComponentId="{C0BC90F7-E35C-47D2-B2F6-62B1A26FB9F1}" Directory_="Main_Dir" Attributes="0" KeyPath="BarChartPendapatan.class" Type="0"/>
+    <ROW Component="BarChartPendapatan.java" ComponentId="{0558F30F-0CEF-47B2-9824-9ECB597B3BAE}" Directory_="Main_1_Dir" Attributes="0" KeyPath="BarChartPendapatan.java" Type="0"/>
+    <ROW Component="BerhasilEditData.form" ComponentId="{B43D7F91-81B5-4406-82C4-D3FB2E33A3AE}" Directory_="Informasi_1_Dir" Attributes="0" KeyPath="BerhasilEditData.form_1" Type="0"/>
+    <ROW Component="BerhasilEditData1.class" ComponentId="{096C8AB6-9027-47F0-AD95-E9F90C3932A1}" Directory_="Informasi_Dir" Attributes="0" KeyPath="BerhasilEditData1.class" Type="0"/>
+    <ROW Component="BerhasilTransaksiBeli.form" ComponentId="{1145BE6A-EE9B-467E-8EA6-9A175982B3C9}" Directory_="PopUp_1_Dir" Attributes="0" KeyPath="BerhasilTransaksiBeli.form_1" Type="0"/>
+    <ROW Component="BerhasilTransaksiBeli1.class" ComponentId="{CE36DC9D-AB0B-45DF-B68B-63970E961600}" Directory_="PopUp_Dir" Attributes="0" KeyPath="BerhasilTransaksiBeli1.class" Type="0"/>
+    <ROW Component="Dashboard.png" ComponentId="{A814DDE5-7626-413C-9B24-DFD1317DCF3E}" Directory_="Image_Dir" Attributes="0" KeyPath="Dashboard.png" Type="0"/>
+    <ROW Component="Dashboard.png_1" ComponentId="{0183C007-6EBB-4791-BD8A-39DFCC4C0CD2}" Directory_="Image_1_Dir" Attributes="0" KeyPath="Dashboard.png_2" Type="0"/>
+    <ROW Component="DashboardKaryawan.form" ComponentId="{E9108362-8146-4BEE-8D4F-8A22DD74148F}" Directory_="Karyawan_1_Dir" Attributes="0" KeyPath="DashboardKaryawan.form_1" Type="0"/>
+    <ROW Component="DashboardKaryawan1.class" ComponentId="{63CF3996-8C0D-4C5A-8FAE-CE4A84A5ABFF}" Directory_="Karyawan_Dir" Attributes="0" KeyPath="DashboardKaryawan1.class" Type="0"/>
+    <ROW Component="DashboardOwner.form" ComponentId="{CC8AD973-749E-494B-A302-EA990FA473C0}" Directory_="Owner_1_Dir" Attributes="0" KeyPath="DashboardOwner.form_1" Type="0"/>
+    <ROW Component="DashboardOwner1.class" ComponentId="{8CFB1A79-C0A6-4A04-825C-C8C28663A7E3}" Directory_="Owner_Dir" Attributes="0" KeyPath="DashboardOwner1.class" Type="0"/>
+    <ROW Component="Login.form" ComponentId="{02AAED99-3EDF-42AE-9668-F25FEA2E1C5E}" Directory_="Frame_1_Dir" Attributes="0" KeyPath="Login.form_1" Type="0"/>
+    <ROW Component="Login1.class" ComponentId="{C79B98D1-438A-441E-91DA-68C961714D8F}" Directory_="Frame_Dir" Attributes="0" KeyPath="Login1.class" Type="0"/>
+    <ROW Component="Nota.jasper" ComponentId="{DB2B7CA7-EF50-493E-8AD4-03D2ADCFEE7C}" Directory_="Cetak_Dir" Attributes="0" KeyPath="Nota.jasper" Type="0"/>
+    <ROW Component="Nota.jasper_1" ComponentId="{23EB6526-5E4E-4D24-AE8A-BA30876991CB}" Directory_="Cetak_1_Dir" Attributes="0" KeyPath="Nota.jasper_1" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{5DB61A3E-4707-4499-8CF1-1A70ACA4520A}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="applet.policy" ComponentId="{70CE05BA-026B-4746-A593-8F200DA71504}" Directory_="ePayment_Dir" Attributes="0" KeyPath="applet.policy" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{EBADFD5F-6B09-4C28-94DC-5E7FF1E8E570}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{C91295EC-9E69-4B08-A52C-5C3FCCBC6F20}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="config.properties" ComponentId="{C2D3F36A-81A4-44BD-AC03-90736EFF1A09}" Directory_="private_Dir" Attributes="0" KeyPath="config.properties" Type="0"/>
+    <ROW Component="ePayment.jar" ComponentId="{A11064BF-F130-4E03-AD47-CF96D3B42B22}" Directory_="dist_Dir" Attributes="0" KeyPath="ePayment.jar" Type="0"/>
+    <ROW Component="jfreechart1.5.0.jar" ComponentId="{6718CF82-0BF0-4307-84B7-C326B4B00B59}" Directory_="APPDIR" Attributes="0" KeyPath="jfreechart1.5.0.jar_1" Type="0"/>
+    <ROW Component="netbeans_automatic_build" ComponentId="{F019D938-915A-4D98-8117-4204B43AC269}" Directory_="classes_Dir" Attributes="0" KeyPath="netbeans_automatic_build" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="applet.policy" Component_="applet.policy" FileName="APPLET~1.POL|applet.policy" Attributes="0" SourcePath="applet.policy" SelfReg="false"/>
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="BUILT-~1.PRO|built-jar.properties" Attributes="0" SourcePath="build\built-jar.properties" SelfReg="false"/>
+    <ROW File="netbeans_automatic_build" Component_="netbeans_automatic_build" FileName="NETBEA~1|.netbeans_automatic_build" Attributes="0" SourcePath="build\classes\.netbeans_automatic_build" SelfReg="false"/>
+    <ROW File="netbeans_update_resources" Component_="netbeans_automatic_build" FileName="NETBEA~2|.netbeans_update_resources" Attributes="0" SourcePath="build\classes\.netbeans_update_resources" SelfReg="false"/>
+    <ROW File="BASRENG0001.png" Component_="BASRENG0001.png" FileName="1111-B~1.PNG|1111-BASRENG-0001.png" Attributes="0" SourcePath="build\classes\Barcode\1111-BASRENG-0001.png" SelfReg="false"/>
+    <ROW File="BASRENG0002.png" Component_="BASRENG0001.png" FileName="1111-B~2.PNG|1111-BASRENG-0002.png" Attributes="0" SourcePath="build\classes\Barcode\1111-BASRENG-0002.png" SelfReg="false"/>
+    <ROW File="BASRENG0003.png" Component_="BASRENG0001.png" FileName="1111-B~3.PNG|1111-BASRENG-0003.png" Attributes="0" SourcePath="build\classes\Barcode\1111-BASRENG-0003.png" SelfReg="false"/>
+    <ROW File="Nota.jasper" Component_="Nota.jasper" FileName="NOTA~1.JAS|Nota.jasper" Attributes="0" SourcePath="build\classes\Cetak\Nota.jasper" SelfReg="false"/>
+    <ROW File="Nota.jrxml" Component_="Nota.jasper" FileName="NOTA~1.JRX|Nota.jrxml" Attributes="0" SourcePath="build\classes\Cetak\Nota.jrxml" SelfReg="false"/>
+    <ROW File="Notaaaaa.jasper" Component_="Nota.jasper" FileName="NOTAAA~1.JAS|Notaaaaa.jasper" Attributes="0" SourcePath="build\classes\Cetak\Notaaaaa.jasper" SelfReg="false"/>
+    <ROW File="Notaaaaa.jrxml" Component_="Nota.jasper" FileName="NOTAAA~1.JRX|Notaaaaa.jrxml" Attributes="0" SourcePath="build\classes\Cetak\Notaaaaa.jrxml" SelfReg="false"/>
+    <ROW File="NotaBeli.jasper" Component_="Nota.jasper" FileName="NOTABE~1.JAS|NotaBeli.jasper" Attributes="0" SourcePath="build\classes\Cetak\NotaBeli.jasper" SelfReg="false"/>
+    <ROW File="NotaBeli.jrxml" Component_="Nota.jasper" FileName="NOTABE~1.JRX|NotaBeli.jrxml" Attributes="0" SourcePath="build\classes\Cetak\NotaBeli.jrxml" SelfReg="false"/>
+    <ROW File="Login1.class" Component_="Login1.class" FileName="LOGIN$~1.CLA|Login$1.class" Attributes="0" SourcePath="build\classes\Frame\Login$1.class" SelfReg="false"/>
+    <ROW File="Login2.class" Component_="Login1.class" FileName="LOGIN$~2.CLA|Login$2.class" Attributes="0" SourcePath="build\classes\Frame\Login$2.class" SelfReg="false"/>
+    <ROW File="Login3.class" Component_="Login1.class" FileName="LOGIN$~3.CLA|Login$3.class" Attributes="0" SourcePath="build\classes\Frame\Login$3.class" SelfReg="false"/>
+    <ROW File="Login4.class" Component_="Login1.class" FileName="LOGIN$~4.CLA|Login$4.class" Attributes="0" SourcePath="build\classes\Frame\Login$4.class" SelfReg="false"/>
+    <ROW File="Login5.class" Component_="Login1.class" FileName="LOGIN$~5.CLA|Login$5.class" Attributes="0" SourcePath="build\classes\Frame\Login$5.class" SelfReg="false"/>
+    <ROW File="Login6.class" Component_="Login1.class" FileName="LOGIN$~6.CLA|Login$6.class" Attributes="0" SourcePath="build\classes\Frame\Login$6.class" SelfReg="false"/>
+    <ROW File="Login7.class" Component_="Login1.class" FileName="LOGIN$~7.CLA|Login$7.class" Attributes="0" SourcePath="build\classes\Frame\Login$7.class" SelfReg="false"/>
+    <ROW File="Login.class" Component_="Login1.class" FileName="LOGIN~1.CLA|Login.class" Attributes="0" SourcePath="build\classes\Frame\Login.class" SelfReg="false"/>
+    <ROW File="Login.form" Component_="Login1.class" FileName="LOGIN~1.FOR|Login.form" Attributes="0" SourcePath="build\classes\Frame\Login.form" SelfReg="false"/>
+    <ROW File="LoginWithRFID1.class" Component_="Login1.class" FileName="LOGINW~1.CLA|LoginWithRFID$1.class" Attributes="0" SourcePath="build\classes\Frame\LoginWithRFID$1.class" SelfReg="false"/>
+    <ROW File="LoginWithRFID2.class" Component_="Login1.class" FileName="LOGINW~2.CLA|LoginWithRFID$2.class" Attributes="0" SourcePath="build\classes\Frame\LoginWithRFID$2.class" SelfReg="false"/>
+    <ROW File="LoginWithRFID3.class" Component_="Login1.class" FileName="LOGINW~3.CLA|LoginWithRFID$3.class" Attributes="0" SourcePath="build\classes\Frame\LoginWithRFID$3.class" SelfReg="false"/>
+    <ROW File="LoginWithRFID.class" Component_="Login1.class" FileName="LOGINW~4.CLA|LoginWithRFID.class" Attributes="0" SourcePath="build\classes\Frame\LoginWithRFID.class" SelfReg="false"/>
+    <ROW File="LoginWithRFID.form" Component_="Login1.class" FileName="LOGINW~1.FOR|LoginWithRFID.form" Attributes="0" SourcePath="build\classes\Frame\LoginWithRFID.form" SelfReg="false"/>
+    <ROW File="LupaPassword1.class" Component_="Login1.class" FileName="LUPAPA~1.CLA|LupaPassword$1.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$1.class" SelfReg="false"/>
+    <ROW File="LupaPassword2.class" Component_="Login1.class" FileName="LUPAPA~2.CLA|LupaPassword$2.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$2.class" SelfReg="false"/>
+    <ROW File="LupaPassword3.class" Component_="Login1.class" FileName="LUPAPA~3.CLA|LupaPassword$3.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$3.class" SelfReg="false"/>
+    <ROW File="LupaPassword4.class" Component_="Login1.class" FileName="LUPAPA~4.CLA|LupaPassword$4.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$4.class" SelfReg="false"/>
+    <ROW File="LupaPassword5.class" Component_="Login1.class" FileName="LUPAPA~5.CLA|LupaPassword$5.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$5.class" SelfReg="false"/>
+    <ROW File="LupaPassword6.class" Component_="Login1.class" FileName="LUPAPA~6.CLA|LupaPassword$6.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$6.class" SelfReg="false"/>
+    <ROW File="LupaPassword7.class" Component_="Login1.class" FileName="LUPAPA~7.CLA|LupaPassword$7.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$7.class" SelfReg="false"/>
+    <ROW File="LupaPassword8.class" Component_="Login1.class" FileName="LUPAPA~8.CLA|LupaPassword$8.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$8.class" SelfReg="false"/>
+    <ROW File="LupaPassword91.class" Component_="Login1.class" FileName="LUPAPA~9.CLA|LupaPassword$9$1.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$9$1.class" SelfReg="false"/>
+    <ROW File="LupaPassword9.class" Component_="Login1.class" FileName="LUPAP~10.CLA|LupaPassword$9.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword$9.class" SelfReg="false"/>
+    <ROW File="LupaPassword.class" Component_="Login1.class" FileName="LUPAP~11.CLA|LupaPassword.class" Attributes="0" SourcePath="build\classes\Frame\LupaPassword.class" SelfReg="false"/>
+    <ROW File="LupaPassword.form" Component_="Login1.class" FileName="LUPAPA~1.FOR|LupaPassword.form" Attributes="0" SourcePath="build\classes\Frame\LupaPassword.form" SelfReg="false"/>
+    <ROW File="ProgressBar1.class" Component_="Login1.class" FileName="PROGRE~1.CLA|ProgressBar$1.class" Attributes="0" SourcePath="build\classes\Frame\ProgressBar$1.class" SelfReg="false"/>
+    <ROW File="ProgressBar2.class" Component_="Login1.class" FileName="PROGRE~2.CLA|ProgressBar$2.class" Attributes="0" SourcePath="build\classes\Frame\ProgressBar$2.class" SelfReg="false"/>
+    <ROW File="ProgressBar.class" Component_="Login1.class" FileName="PROGRE~3.CLA|ProgressBar.class" Attributes="0" SourcePath="build\classes\Frame\ProgressBar.class" SelfReg="false"/>
+    <ROW File="ProgressBar.form" Component_="Login1.class" FileName="PROGRE~1.FOR|ProgressBar.form" Attributes="0" SourcePath="build\classes\Frame\ProgressBar.form" SelfReg="false"/>
+    <ROW File="Dashboard.png" Component_="Dashboard.png" FileName="01DASH~1.PNG|01Dashboard.png" Attributes="0" SourcePath="build\classes\Image\01Dashboard.png" SelfReg="false"/>
+    <ROW File="Dashboard.png_1" Component_="Dashboard.png" FileName="02DASH~1.PNG|02Dashboard.png" Attributes="0" SourcePath="build\classes\Image\02Dashboard.png" SelfReg="false"/>
+    <ROW File="BerhasilExport.png" Component_="Dashboard.png" FileName="BERHAS~1.PNG|BerhasilExport.png" Attributes="0" SourcePath="build\classes\Image\BerhasilExport.png" SelfReg="false"/>
+    <ROW File="berhasilGanti.png" Component_="Dashboard.png" FileName="BERHAS~2.PNG|berhasilGanti.png" Attributes="0" SourcePath="build\classes\Image\berhasilGanti.png" SelfReg="false"/>
+    <ROW File="berhasilLogin.png" Component_="Dashboard.png" FileName="BERHAS~3.PNG|berhasilLogin.png" Attributes="0" SourcePath="build\classes\Image\berhasilLogin.png" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli.png" Component_="Dashboard.png" FileName="BERHAS~4.PNG|BerhasilTransaksiBeli.png" Attributes="0" SourcePath="build\classes\Image\BerhasilTransaksiBeli.png" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual.png" Component_="Dashboard.png" FileName="BERHAS~5.PNG|BerhasilTransaksiJual.png" Attributes="0" SourcePath="build\classes\Image\BerhasilTransaksiJual.png" SelfReg="false"/>
+    <ROW File="bukanMember.png" Component_="Dashboard.png" FileName="BUKANM~1.PNG|bukanMember.png" Attributes="0" SourcePath="build\classes\Image\bukanMember.png" SelfReg="false"/>
+    <ROW File="Cari.png" Component_="Dashboard.png" FileName="Cari.png" Attributes="0" SourcePath="build\classes\Image\Cari.png" SelfReg="false"/>
+    <ROW File="dataKaryawan.png" Component_="Dashboard.png" FileName="DATAKA~1.PNG|dataKaryawan.png" Attributes="0" SourcePath="build\classes\Image\dataKaryawan.png" SelfReg="false"/>
+    <ROW File="dataMember.png" Component_="Dashboard.png" FileName="DATAME~1.PNG|dataMember.png" Attributes="0" SourcePath="build\classes\Image\dataMember.png" SelfReg="false"/>
+    <ROW File="dataProduk.png" Component_="Dashboard.png" FileName="DATAPR~1.PNG|dataProduk.png" Attributes="0" SourcePath="build\classes\Image\dataProduk.png" SelfReg="false"/>
+    <ROW File="dataSupplier.png" Component_="Dashboard.png" FileName="DATASU~1.PNG|dataSupplier.png" Attributes="0" SourcePath="build\classes\Image\dataSupplier.png" SelfReg="false"/>
+    <ROW File="editData.png" Component_="Dashboard.png" FileName="editData.png" Attributes="0" SourcePath="build\classes\Image\editData.png" SelfReg="false"/>
+    <ROW File="gagalEdit.png" Component_="Dashboard.png" FileName="GAGALE~1.PNG|gagalEdit.png" Attributes="0" SourcePath="build\classes\Image\gagalEdit.png" SelfReg="false"/>
+    <ROW File="gagalHapus.png" Component_="Dashboard.png" FileName="GAGALH~1.PNG|gagalHapus.png" Attributes="0" SourcePath="build\classes\Image\gagalHapus.png" SelfReg="false"/>
+    <ROW File="gagalLogin.png" Component_="Dashboard.png" FileName="GAGALL~1.PNG|gagalLogin.png" Attributes="0" SourcePath="build\classes\Image\gagalLogin.png" SelfReg="false"/>
+    <ROW File="gagalTambah.png" Component_="Dashboard.png" FileName="GAGALT~1.PNG|gagalTambah.png" Attributes="0" SourcePath="build\classes\Image\gagalTambah.png" SelfReg="false"/>
+    <ROW File="gantiPassword.png" Component_="Dashboard.png" FileName="GANTIP~1.PNG|gantiPassword.png" Attributes="0" SourcePath="build\classes\Image\gantiPassword.png" SelfReg="false"/>
+    <ROW File="hapusData.png" Component_="Dashboard.png" FileName="HAPUSD~1.PNG|hapusData.png" Attributes="0" SourcePath="build\classes\Image\hapusData.png" SelfReg="false"/>
+    <ROW File="hapusOwner.png" Component_="Dashboard.png" FileName="HAPUSO~1.PNG|hapusOwner.png" Attributes="0" SourcePath="build\classes\Image\hapusOwner.png" SelfReg="false"/>
+    <ROW File="harap.png" Component_="Dashboard.png" FileName="harap.png" Attributes="0" SourcePath="build\classes\Image\harap.png" SelfReg="false"/>
+    <ROW File="Ic_Hidden.png" Component_="Dashboard.png" FileName="IC_HID~1.PNG|Ic_Hidden.png" Attributes="0" SourcePath="build\classes\Image\Ic_Hidden.png" SelfReg="false"/>
+    <ROW File="Ic_Show.png" Component_="Dashboard.png" FileName="Ic_Show.png" Attributes="0" SourcePath="build\classes\Image\Ic_Show.png" SelfReg="false"/>
+    <ROW File="IsiJumlah.png" Component_="Dashboard.png" FileName="ISIJUM~1.PNG|IsiJumlah.png" Attributes="0" SourcePath="build\classes\Image\IsiJumlah.png" SelfReg="false"/>
+    <ROW File="IsiTunai.png" Component_="Dashboard.png" FileName="IsiTunai.png" Attributes="0" SourcePath="build\classes\Image\IsiTunai.png" SelfReg="false"/>
+    <ROW File="keluar.png" Component_="Dashboard.png" FileName="keluar.png" Attributes="0" SourcePath="build\classes\Image\keluar.png" SelfReg="false"/>
+    <ROW File="konfirmasiPass.png" Component_="Dashboard.png" FileName="KONFIR~1.PNG|konfirmasiPass.png" Attributes="0" SourcePath="build\classes\Image\konfirmasiPass.png" SelfReg="false"/>
+    <ROW File="laporanPendapatanB.png" Component_="Dashboard.png" FileName="LAPORA~1.PNG|laporanPendapatanB.png" Attributes="0" SourcePath="build\classes\Image\laporanPendapatanB.png" SelfReg="false"/>
+    <ROW File="laporanPendapatanH.png" Component_="Dashboard.png" FileName="LAPORA~2.PNG|laporanPendapatanH.png" Attributes="0" SourcePath="build\classes\Image\laporanPendapatanH.png" SelfReg="false"/>
+    <ROW File="laporanPendapatanM.png" Component_="Dashboard.png" FileName="LAPORA~3.PNG|laporanPendapatanM.png" Attributes="0" SourcePath="build\classes\Image\laporanPendapatanM.png" SelfReg="false"/>
+    <ROW File="laporanPengeluaranB.png" Component_="Dashboard.png" FileName="LAPORA~4.PNG|laporanPengeluaranB.png" Attributes="0" SourcePath="build\classes\Image\laporanPengeluaranB.png" SelfReg="false"/>
+    <ROW File="laporanPengeluaranH.png" Component_="Dashboard.png" FileName="LAPORA~5.PNG|laporanPengeluaranH.png" Attributes="0" SourcePath="build\classes\Image\laporanPengeluaranH.png" SelfReg="false"/>
+    <ROW File="laporanPengeluaranM.png" Component_="Dashboard.png" FileName="LAPORA~6.PNG|laporanPengeluaranM.png" Attributes="0" SourcePath="build\classes\Image\laporanPengeluaranM.png" SelfReg="false"/>
+    <ROW File="login.png" Component_="Dashboard.png" FileName="login.png" Attributes="0" SourcePath="build\classes\Image\login.png" SelfReg="false"/>
+    <ROW File="loginRFID.png" Component_="Dashboard.png" FileName="LOGINR~1.PNG|loginRFID.png" Attributes="0" SourcePath="build\classes\Image\loginRFID.png" SelfReg="false"/>
+    <ROW File="Login_1.png" Component_="Dashboard.png" FileName="Login_1.png" Attributes="0" SourcePath="build\classes\Image\Login_1.png" SelfReg="false"/>
+    <ROW File="LogoAplikasi.png" Component_="Dashboard.png" FileName="LOGOAP~1.PNG|LogoAplikasi.png" Attributes="0" SourcePath="build\classes\Image\LogoAplikasi.png" SelfReg="false"/>
+    <ROW File="lupaPassword.png" Component_="Dashboard.png" FileName="LUPAPA~1.PNG|lupaPassword.png" Attributes="0" SourcePath="build\classes\Image\lupaPassword.png" SelfReg="false"/>
+    <ROW File="menuOwner.png" Component_="Dashboard.png" FileName="MENUOW~1.PNG|menuOwner.png" Attributes="0" SourcePath="build\classes\Image\menuOwner.png" SelfReg="false"/>
+    <ROW File="menuTransaksi.png" Component_="Dashboard.png" FileName="MENUTR~1.PNG|menuTransaksi.png" Attributes="0" SourcePath="build\classes\Image\menuTransaksi.png" SelfReg="false"/>
+    <ROW File="PembayaranKurang.png" Component_="Dashboard.png" FileName="PEMBAY~1.PNG|PembayaranKurang.png" Attributes="0" SourcePath="build\classes\Image\PembayaranKurang.png" SelfReg="false"/>
+    <ROW File="PilihData.png" Component_="Dashboard.png" FileName="PILIHD~1.PNG|PilihData.png" Attributes="0" SourcePath="build\classes\Image\PilihData.png" SelfReg="false"/>
+    <ROW File="PilihTanggal.png" Component_="Dashboard.png" FileName="PILIHT~1.PNG|PilihTanggal.png" Attributes="0" SourcePath="build\classes\Image\PilihTanggal.png" SelfReg="false"/>
+    <ROW File="popupDataKaryawan.png" Component_="Dashboard.png" FileName="POPUPD~1.PNG|popupDataKaryawan.png" Attributes="0" SourcePath="build\classes\Image\popupDataKaryawan.png" SelfReg="false"/>
+    <ROW File="popupDataMember.png" Component_="Dashboard.png" FileName="POPUPD~2.PNG|popupDataMember.png" Attributes="0" SourcePath="build\classes\Image\popupDataMember.png" SelfReg="false"/>
+    <ROW File="popupDataProduk.png" Component_="Dashboard.png" FileName="POPUPD~3.PNG|popupDataProduk.png" Attributes="0" SourcePath="build\classes\Image\popupDataProduk.png" SelfReg="false"/>
+    <ROW File="popupDataSuppplier.png" Component_="Dashboard.png" FileName="POPUPD~4.PNG|popupDataSuppplier.png" Attributes="0" SourcePath="build\classes\Image\popupDataSuppplier.png" SelfReg="false"/>
+    <ROW File="popupLaporan.png" Component_="Dashboard.png" FileName="POPUPL~1.PNG|popupLaporan.png" Attributes="0" SourcePath="build\classes\Image\popupLaporan.png" SelfReg="false"/>
+    <ROW File="popupProduk.png" Component_="Dashboard.png" FileName="POPUPP~1.PNG|popupProduk.png" Attributes="0" SourcePath="build\classes\Image\popupProduk.png" SelfReg="false"/>
+    <ROW File="popupSupplier.png" Component_="Dashboard.png" FileName="POPUPS~1.PNG|popupSupplier.png" Attributes="0" SourcePath="build\classes\Image\popupSupplier.png" SelfReg="false"/>
+    <ROW File="produk.png" Component_="Dashboard.png" FileName="produk.png" Attributes="0" SourcePath="build\classes\Image\produk.png" SelfReg="false"/>
+    <ROW File="profile.png" Component_="Dashboard.png" FileName="profile.png" Attributes="0" SourcePath="build\classes\Image\profile.png" SelfReg="false"/>
+    <ROW File="progressBar.png" Component_="Dashboard.png" FileName="PROGRE~1.PNG|progressBar.png" Attributes="0" SourcePath="build\classes\Image\progressBar.png" SelfReg="false"/>
+    <ROW File="stokHabis.png" Component_="Dashboard.png" FileName="STOKHA~1.PNG|stokHabis.png" Attributes="0" SourcePath="build\classes\Image\stokHabis.png" SelfReg="false"/>
+    <ROW File="stokKurang.png" Component_="Dashboard.png" FileName="STOKKU~1.PNG|stokKurang.png" Attributes="0" SourcePath="build\classes\Image\stokKurang.png" SelfReg="false"/>
+    <ROW File="supplier.png" Component_="Dashboard.png" FileName="supplier.png" Attributes="0" SourcePath="build\classes\Image\supplier.png" SelfReg="false"/>
+    <ROW File="TabelKosong.png" Component_="Dashboard.png" FileName="TABELK~1.PNG|TabelKosong.png" Attributes="0" SourcePath="build\classes\Image\TabelKosong.png" SelfReg="false"/>
+    <ROW File="tambahData.png" Component_="Dashboard.png" FileName="TAMBAH~1.PNG|tambahData.png" Attributes="0" SourcePath="build\classes\Image\tambahData.png" SelfReg="false"/>
+    <ROW File="tanyaHapus.png" Component_="Dashboard.png" FileName="TANYAH~1.PNG|tanyaHapus.png" Attributes="0" SourcePath="build\classes\Image\tanyaHapus.png" SelfReg="false"/>
+    <ROW File="transaksiBeliBaru.png" Component_="Dashboard.png" FileName="TRANSA~1.PNG|transaksiBeliBaru.png" Attributes="0" SourcePath="build\classes\Image\transaksiBeliBaru.png" SelfReg="false"/>
+    <ROW File="TransaksiBeli_1.png" Component_="Dashboard.png" FileName="TRANSA~2.PNG|TransaksiBeli_1.png" Attributes="0" SourcePath="build\classes\Image\TransaksiBeli_1.png" SelfReg="false"/>
+    <ROW File="TransaksiJual.png" Component_="Dashboard.png" FileName="TRANSA~3.PNG|TransaksiJual.png" Attributes="0" SourcePath="build\classes\Image\TransaksiJual.png" SelfReg="false"/>
+    <ROW File="BerhasilEditData1.class" Component_="BerhasilEditData1.class" FileName="BERHAS~1.CLA|BerhasilEditData$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilEditData$1.class" SelfReg="false"/>
+    <ROW File="BerhasilEditData2.class" Component_="BerhasilEditData1.class" FileName="BERHAS~2.CLA|BerhasilEditData$2.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilEditData$2.class" SelfReg="false"/>
+    <ROW File="BerhasilEditData31.class" Component_="BerhasilEditData1.class" FileName="BERHAS~3.CLA|BerhasilEditData$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilEditData$3$1.class" SelfReg="false"/>
+    <ROW File="BerhasilEditData3.class" Component_="BerhasilEditData1.class" FileName="BERHAS~4.CLA|BerhasilEditData$3.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilEditData$3.class" SelfReg="false"/>
+    <ROW File="BerhasilEditData.class" Component_="BerhasilEditData1.class" FileName="BERHAS~5.CLA|BerhasilEditData.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilEditData.class" SelfReg="false"/>
+    <ROW File="BerhasilEditData.form" Component_="BerhasilEditData1.class" FileName="BERHAS~1.FOR|BerhasilEditData.form" Attributes="0" SourcePath="build\classes\Informasi\BerhasilEditData.form" SelfReg="false"/>
+    <ROW File="BerhasilExport1.class" Component_="BerhasilEditData1.class" FileName="BERHAS~6.CLA|BerhasilExport$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilExport$1.class" SelfReg="false"/>
+    <ROW File="BerhasilExport2.class" Component_="BerhasilEditData1.class" FileName="BERHAS~7.CLA|BerhasilExport$2.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilExport$2.class" SelfReg="false"/>
+    <ROW File="BerhasilExport31.class" Component_="BerhasilEditData1.class" FileName="BERHAS~8.CLA|BerhasilExport$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilExport$3$1.class" SelfReg="false"/>
+    <ROW File="BerhasilExport3.class" Component_="BerhasilEditData1.class" FileName="BERHAS~9.CLA|BerhasilExport$3.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilExport$3.class" SelfReg="false"/>
+    <ROW File="BerhasilExport.class" Component_="BerhasilEditData1.class" FileName="BERHA~10.CLA|BerhasilExport.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilExport.class" SelfReg="false"/>
+    <ROW File="BerhasilExport.form" Component_="BerhasilEditData1.class" FileName="BERHAS~2.FOR|BerhasilExport.form" Attributes="0" SourcePath="build\classes\Informasi\BerhasilExport.form" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword1.class" Component_="BerhasilEditData1.class" FileName="BERHA~11.CLA|BerhasilGantiPassword$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilGantiPassword$1.class" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword2.class" Component_="BerhasilEditData1.class" FileName="BERHA~12.CLA|BerhasilGantiPassword$2.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilGantiPassword$2.class" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword31.class" Component_="BerhasilEditData1.class" FileName="BERHA~13.CLA|BerhasilGantiPassword$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilGantiPassword$3$1.class" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword3.class" Component_="BerhasilEditData1.class" FileName="BERHA~14.CLA|BerhasilGantiPassword$3.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilGantiPassword$3.class" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword.class" Component_="BerhasilEditData1.class" FileName="BERHA~15.CLA|BerhasilGantiPassword.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilGantiPassword.class" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword.form" Component_="BerhasilEditData1.class" FileName="BERHAS~3.FOR|BerhasilGantiPassword.form" Attributes="0" SourcePath="build\classes\Informasi\BerhasilGantiPassword.form" SelfReg="false"/>
+    <ROW File="BerhasilHapusData1.class" Component_="BerhasilEditData1.class" FileName="BERHA~16.CLA|BerhasilHapusData$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilHapusData$1.class" SelfReg="false"/>
+    <ROW File="BerhasilHapusData2.class" Component_="BerhasilEditData1.class" FileName="BERHA~17.CLA|BerhasilHapusData$2.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilHapusData$2.class" SelfReg="false"/>
+    <ROW File="BerhasilHapusData31.class" Component_="BerhasilEditData1.class" FileName="BERHA~18.CLA|BerhasilHapusData$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilHapusData$3$1.class" SelfReg="false"/>
+    <ROW File="BerhasilHapusData3.class" Component_="BerhasilEditData1.class" FileName="BERHA~19.CLA|BerhasilHapusData$3.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilHapusData$3.class" SelfReg="false"/>
+    <ROW File="BerhasilHapusData.class" Component_="BerhasilEditData1.class" FileName="BERHA~20.CLA|BerhasilHapusData.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilHapusData.class" SelfReg="false"/>
+    <ROW File="BerhasilHapusData.form" Component_="BerhasilEditData1.class" FileName="BERHAS~4.FOR|BerhasilHapusData.form" Attributes="0" SourcePath="build\classes\Informasi\BerhasilHapusData.form" SelfReg="false"/>
+    <ROW File="BerhasilLogin1.class" Component_="BerhasilEditData1.class" FileName="BERHA~21.CLA|BerhasilLogin$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin$1.class" SelfReg="false"/>
+    <ROW File="BerhasilLogin2.class" Component_="BerhasilEditData1.class" FileName="BERHA~22.CLA|BerhasilLogin$2.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin$2.class" SelfReg="false"/>
+    <ROW File="BerhasilLogin3.class" Component_="BerhasilEditData1.class" FileName="BERHA~23.CLA|BerhasilLogin$3.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin$3.class" SelfReg="false"/>
+    <ROW File="BerhasilLogin4.class" Component_="BerhasilEditData1.class" FileName="BERHA~24.CLA|BerhasilLogin$4.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin$4.class" SelfReg="false"/>
+    <ROW File="BerhasilLogin51.class" Component_="BerhasilEditData1.class" FileName="BERHA~25.CLA|BerhasilLogin$5$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin$5$1.class" SelfReg="false"/>
+    <ROW File="BerhasilLogin5.class" Component_="BerhasilEditData1.class" FileName="BERHA~26.CLA|BerhasilLogin$5.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin$5.class" SelfReg="false"/>
+    <ROW File="BerhasilLogin.class" Component_="BerhasilEditData1.class" FileName="BERHA~27.CLA|BerhasilLogin.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin.class" SelfReg="false"/>
+    <ROW File="BerhasilLogin.form" Component_="BerhasilEditData1.class" FileName="BERHAS~5.FOR|BerhasilLogin.form" Attributes="0" SourcePath="build\classes\Informasi\BerhasilLogin.form" SelfReg="false"/>
+    <ROW File="BerhasilTambahData1.class" Component_="BerhasilEditData1.class" FileName="BERHA~28.CLA|BerhasilTambahData$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilTambahData$1.class" SelfReg="false"/>
+    <ROW File="BerhasilTambahData21.class" Component_="BerhasilEditData1.class" FileName="BERHA~29.CLA|BerhasilTambahData$2$1.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilTambahData$2$1.class" SelfReg="false"/>
+    <ROW File="BerhasilTambahData2.class" Component_="BerhasilEditData1.class" FileName="BERHA~30.CLA|BerhasilTambahData$2.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilTambahData$2.class" SelfReg="false"/>
+    <ROW File="BerhasilTambahData.class" Component_="BerhasilEditData1.class" FileName="BERHA~31.CLA|BerhasilTambahData.class" Attributes="0" SourcePath="build\classes\Informasi\BerhasilTambahData.class" SelfReg="false"/>
+    <ROW File="BerhasilTambahData.form" Component_="BerhasilEditData1.class" FileName="BERHAS~6.FOR|BerhasilTambahData.form" Attributes="0" SourcePath="build\classes\Informasi\BerhasilTambahData.form" SelfReg="false"/>
+    <ROW File="BukanMember1.class" Component_="BerhasilEditData1.class" FileName="BUKANM~1.CLA|BukanMember$1.class" Attributes="0" SourcePath="build\classes\Informasi\BukanMember$1.class" SelfReg="false"/>
+    <ROW File="BukanMember2.class" Component_="BerhasilEditData1.class" FileName="BUKANM~2.CLA|BukanMember$2.class" Attributes="0" SourcePath="build\classes\Informasi\BukanMember$2.class" SelfReg="false"/>
+    <ROW File="BukanMember31.class" Component_="BerhasilEditData1.class" FileName="BUKANM~3.CLA|BukanMember$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\BukanMember$3$1.class" SelfReg="false"/>
+    <ROW File="BukanMember3.class" Component_="BerhasilEditData1.class" FileName="BUKANM~4.CLA|BukanMember$3.class" Attributes="0" SourcePath="build\classes\Informasi\BukanMember$3.class" SelfReg="false"/>
+    <ROW File="BukanMember.class" Component_="BerhasilEditData1.class" FileName="BUKANM~5.CLA|BukanMember.class" Attributes="0" SourcePath="build\classes\Informasi\BukanMember.class" SelfReg="false"/>
+    <ROW File="BukanMember.form" Component_="BerhasilEditData1.class" FileName="BUKANM~1.FOR|BukanMember.form" Attributes="0" SourcePath="build\classes\Informasi\BukanMember.form" SelfReg="false"/>
+    <ROW File="GagalEditData1.class" Component_="BerhasilEditData1.class" FileName="GAGALE~1.CLA|GagalEditData$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalEditData$1.class" SelfReg="false"/>
+    <ROW File="GagalEditData2.class" Component_="BerhasilEditData1.class" FileName="GAGALE~2.CLA|GagalEditData$2.class" Attributes="0" SourcePath="build\classes\Informasi\GagalEditData$2.class" SelfReg="false"/>
+    <ROW File="GagalEditData31.class" Component_="BerhasilEditData1.class" FileName="GAGALE~3.CLA|GagalEditData$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalEditData$3$1.class" SelfReg="false"/>
+    <ROW File="GagalEditData3.class" Component_="BerhasilEditData1.class" FileName="GAGALE~4.CLA|GagalEditData$3.class" Attributes="0" SourcePath="build\classes\Informasi\GagalEditData$3.class" SelfReg="false"/>
+    <ROW File="GagalEditData.class" Component_="BerhasilEditData1.class" FileName="GAGALE~5.CLA|GagalEditData.class" Attributes="0" SourcePath="build\classes\Informasi\GagalEditData.class" SelfReg="false"/>
+    <ROW File="GagalEditData.form" Component_="BerhasilEditData1.class" FileName="GAGALE~1.FOR|GagalEditData.form" Attributes="0" SourcePath="build\classes\Informasi\GagalEditData.form" SelfReg="false"/>
+    <ROW File="GagalHapusData1.class" Component_="BerhasilEditData1.class" FileName="GAGALH~1.CLA|GagalHapusData$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalHapusData$1.class" SelfReg="false"/>
+    <ROW File="GagalHapusData2.class" Component_="BerhasilEditData1.class" FileName="GAGALH~2.CLA|GagalHapusData$2.class" Attributes="0" SourcePath="build\classes\Informasi\GagalHapusData$2.class" SelfReg="false"/>
+    <ROW File="GagalHapusData31.class" Component_="BerhasilEditData1.class" FileName="GAGALH~3.CLA|GagalHapusData$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalHapusData$3$1.class" SelfReg="false"/>
+    <ROW File="GagalHapusData3.class" Component_="BerhasilEditData1.class" FileName="GAGALH~4.CLA|GagalHapusData$3.class" Attributes="0" SourcePath="build\classes\Informasi\GagalHapusData$3.class" SelfReg="false"/>
+    <ROW File="GagalHapusData.class" Component_="BerhasilEditData1.class" FileName="GAGALH~5.CLA|GagalHapusData.class" Attributes="0" SourcePath="build\classes\Informasi\GagalHapusData.class" SelfReg="false"/>
+    <ROW File="GagalHapusData.form" Component_="BerhasilEditData1.class" FileName="GAGALH~1.FOR|GagalHapusData.form" Attributes="0" SourcePath="build\classes\Informasi\GagalHapusData.form" SelfReg="false"/>
+    <ROW File="GagalLogin1.class" Component_="BerhasilEditData1.class" FileName="GAGALL~1.CLA|GagalLogin$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalLogin$1.class" SelfReg="false"/>
+    <ROW File="GagalLogin2.class" Component_="BerhasilEditData1.class" FileName="GAGALL~2.CLA|GagalLogin$2.class" Attributes="0" SourcePath="build\classes\Informasi\GagalLogin$2.class" SelfReg="false"/>
+    <ROW File="GagalLogin31.class" Component_="BerhasilEditData1.class" FileName="GAGALL~3.CLA|GagalLogin$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalLogin$3$1.class" SelfReg="false"/>
+    <ROW File="GagalLogin3.class" Component_="BerhasilEditData1.class" FileName="GAGALL~4.CLA|GagalLogin$3.class" Attributes="0" SourcePath="build\classes\Informasi\GagalLogin$3.class" SelfReg="false"/>
+    <ROW File="GagalLogin.class" Component_="BerhasilEditData1.class" FileName="GAGALL~5.CLA|GagalLogin.class" Attributes="0" SourcePath="build\classes\Informasi\GagalLogin.class" SelfReg="false"/>
+    <ROW File="GagalLogin.form" Component_="BerhasilEditData1.class" FileName="GAGALL~1.FOR|GagalLogin.form" Attributes="0" SourcePath="build\classes\Informasi\GagalLogin.form" SelfReg="false"/>
+    <ROW File="GagalTambahData1.class" Component_="BerhasilEditData1.class" FileName="GAGALT~1.CLA|GagalTambahData$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalTambahData$1.class" SelfReg="false"/>
+    <ROW File="GagalTambahData2.class" Component_="BerhasilEditData1.class" FileName="GAGALT~2.CLA|GagalTambahData$2.class" Attributes="0" SourcePath="build\classes\Informasi\GagalTambahData$2.class" SelfReg="false"/>
+    <ROW File="GagalTambahData31.class" Component_="BerhasilEditData1.class" FileName="GAGALT~3.CLA|GagalTambahData$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\GagalTambahData$3$1.class" SelfReg="false"/>
+    <ROW File="GagalTambahData3.class" Component_="BerhasilEditData1.class" FileName="GAGALT~4.CLA|GagalTambahData$3.class" Attributes="0" SourcePath="build\classes\Informasi\GagalTambahData$3.class" SelfReg="false"/>
+    <ROW File="GagalTambahData.class" Component_="BerhasilEditData1.class" FileName="GAGALT~5.CLA|GagalTambahData.class" Attributes="0" SourcePath="build\classes\Informasi\GagalTambahData.class" SelfReg="false"/>
+    <ROW File="GagalTambahData.form" Component_="BerhasilEditData1.class" FileName="GAGALT~1.FOR|GagalTambahData.form" Attributes="0" SourcePath="build\classes\Informasi\GagalTambahData.form" SelfReg="false"/>
+    <ROW File="HapusOwner1.class" Component_="BerhasilEditData1.class" FileName="HAPUSO~1.CLA|HapusOwner$1.class" Attributes="0" SourcePath="build\classes\Informasi\HapusOwner$1.class" SelfReg="false"/>
+    <ROW File="HapusOwner2.class" Component_="BerhasilEditData1.class" FileName="HAPUSO~2.CLA|HapusOwner$2.class" Attributes="0" SourcePath="build\classes\Informasi\HapusOwner$2.class" SelfReg="false"/>
+    <ROW File="HapusOwner31.class" Component_="BerhasilEditData1.class" FileName="HAPUSO~3.CLA|HapusOwner$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\HapusOwner$3$1.class" SelfReg="false"/>
+    <ROW File="HapusOwner3.class" Component_="BerhasilEditData1.class" FileName="HAPUSO~4.CLA|HapusOwner$3.class" Attributes="0" SourcePath="build\classes\Informasi\HapusOwner$3.class" SelfReg="false"/>
+    <ROW File="HapusOwner.class" Component_="BerhasilEditData1.class" FileName="HAPUSO~5.CLA|HapusOwner.class" Attributes="0" SourcePath="build\classes\Informasi\HapusOwner.class" SelfReg="false"/>
+    <ROW File="HapusOwner.form" Component_="BerhasilEditData1.class" FileName="HAPUSO~1.FOR|HapusOwner.form" Attributes="0" SourcePath="build\classes\Informasi\HapusOwner.form" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua1.class" Component_="BerhasilEditData1.class" FileName="HARAPD~1.CLA|HarapDiisiSemua$1.class" Attributes="0" SourcePath="build\classes\Informasi\HarapDiisiSemua$1.class" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua2.class" Component_="BerhasilEditData1.class" FileName="HARAPD~2.CLA|HarapDiisiSemua$2.class" Attributes="0" SourcePath="build\classes\Informasi\HarapDiisiSemua$2.class" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua3.class" Component_="BerhasilEditData1.class" FileName="HARAPD~3.CLA|HarapDiisiSemua$3.class" Attributes="0" SourcePath="build\classes\Informasi\HarapDiisiSemua$3.class" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua41.class" Component_="BerhasilEditData1.class" FileName="HARAPD~4.CLA|HarapDiisiSemua$4$1.class" Attributes="0" SourcePath="build\classes\Informasi\HarapDiisiSemua$4$1.class" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua4.class" Component_="BerhasilEditData1.class" FileName="HARAPD~5.CLA|HarapDiisiSemua$4.class" Attributes="0" SourcePath="build\classes\Informasi\HarapDiisiSemua$4.class" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua.class" Component_="BerhasilEditData1.class" FileName="HARAPD~6.CLA|HarapDiisiSemua.class" Attributes="0" SourcePath="build\classes\Informasi\HarapDiisiSemua.class" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua.form" Component_="BerhasilEditData1.class" FileName="HARAPD~1.FOR|HarapDiisiSemua.form" Attributes="0" SourcePath="build\classes\Informasi\HarapDiisiSemua.form" SelfReg="false"/>
+    <ROW File="InginHapusData1.class" Component_="BerhasilEditData1.class" FileName="INGINH~1.CLA|InginHapusData$1.class" Attributes="0" SourcePath="build\classes\Informasi\InginHapusData$1.class" SelfReg="false"/>
+    <ROW File="InginHapusData2.class" Component_="BerhasilEditData1.class" FileName="INGINH~2.CLA|InginHapusData$2.class" Attributes="0" SourcePath="build\classes\Informasi\InginHapusData$2.class" SelfReg="false"/>
+    <ROW File="InginHapusData3.class" Component_="BerhasilEditData1.class" FileName="INGINH~3.CLA|InginHapusData$3.class" Attributes="0" SourcePath="build\classes\Informasi\InginHapusData$3.class" SelfReg="false"/>
+    <ROW File="InginHapusData41.class" Component_="BerhasilEditData1.class" FileName="INGINH~4.CLA|InginHapusData$4$1.class" Attributes="0" SourcePath="build\classes\Informasi\InginHapusData$4$1.class" SelfReg="false"/>
+    <ROW File="InginHapusData4.class" Component_="BerhasilEditData1.class" FileName="INGINH~5.CLA|InginHapusData$4.class" Attributes="0" SourcePath="build\classes\Informasi\InginHapusData$4.class" SelfReg="false"/>
+    <ROW File="InginHapusData.class" Component_="BerhasilEditData1.class" FileName="INGINH~6.CLA|InginHapusData.class" Attributes="0" SourcePath="build\classes\Informasi\InginHapusData.class" SelfReg="false"/>
+    <ROW File="InginHapusData.form" Component_="BerhasilEditData1.class" FileName="INGINH~1.FOR|InginHapusData.form" Attributes="0" SourcePath="build\classes\Informasi\InginHapusData.form" SelfReg="false"/>
+    <ROW File="InginKeluar11.class" Component_="BerhasilEditData1.class" FileName="INGINK~1.CLA|InginKeluar$1$1.class" Attributes="0" SourcePath="build\classes\Informasi\InginKeluar$1$1.class" SelfReg="false"/>
+    <ROW File="InginKeluar1.class" Component_="BerhasilEditData1.class" FileName="INGINK~2.CLA|InginKeluar$1.class" Attributes="0" SourcePath="build\classes\Informasi\InginKeluar$1.class" SelfReg="false"/>
+    <ROW File="InginKeluar.class" Component_="BerhasilEditData1.class" FileName="INGINK~3.CLA|InginKeluar.class" Attributes="0" SourcePath="build\classes\Informasi\InginKeluar.class" SelfReg="false"/>
+    <ROW File="InginKeluar.form" Component_="BerhasilEditData1.class" FileName="INGINK~1.FOR|InginKeluar.form" Attributes="0" SourcePath="build\classes\Informasi\InginKeluar.form" SelfReg="false"/>
+    <ROW File="IsiJumlah1.class" Component_="BerhasilEditData1.class" FileName="ISIJUM~1.CLA|IsiJumlah$1.class" Attributes="0" SourcePath="build\classes\Informasi\IsiJumlah$1.class" SelfReg="false"/>
+    <ROW File="IsiJumlah2.class" Component_="BerhasilEditData1.class" FileName="ISIJUM~2.CLA|IsiJumlah$2.class" Attributes="0" SourcePath="build\classes\Informasi\IsiJumlah$2.class" SelfReg="false"/>
+    <ROW File="IsiJumlah31.class" Component_="BerhasilEditData1.class" FileName="ISIJUM~3.CLA|IsiJumlah$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\IsiJumlah$3$1.class" SelfReg="false"/>
+    <ROW File="IsiJumlah3.class" Component_="BerhasilEditData1.class" FileName="ISIJUM~4.CLA|IsiJumlah$3.class" Attributes="0" SourcePath="build\classes\Informasi\IsiJumlah$3.class" SelfReg="false"/>
+    <ROW File="IsiJumlah.class" Component_="BerhasilEditData1.class" FileName="ISIJUM~5.CLA|IsiJumlah.class" Attributes="0" SourcePath="build\classes\Informasi\IsiJumlah.class" SelfReg="false"/>
+    <ROW File="IsiJumlah.form" Component_="BerhasilEditData1.class" FileName="ISIJUM~1.FOR|IsiJumlah.form" Attributes="0" SourcePath="build\classes\Informasi\IsiJumlah.form" SelfReg="false"/>
+    <ROW File="IsiTunai1.class" Component_="BerhasilEditData1.class" FileName="ISITUN~1.CLA|IsiTunai$1.class" Attributes="0" SourcePath="build\classes\Informasi\IsiTunai$1.class" SelfReg="false"/>
+    <ROW File="IsiTunai2.class" Component_="BerhasilEditData1.class" FileName="ISITUN~2.CLA|IsiTunai$2.class" Attributes="0" SourcePath="build\classes\Informasi\IsiTunai$2.class" SelfReg="false"/>
+    <ROW File="IsiTunai31.class" Component_="BerhasilEditData1.class" FileName="ISITUN~3.CLA|IsiTunai$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\IsiTunai$3$1.class" SelfReg="false"/>
+    <ROW File="IsiTunai3.class" Component_="BerhasilEditData1.class" FileName="ISITUN~4.CLA|IsiTunai$3.class" Attributes="0" SourcePath="build\classes\Informasi\IsiTunai$3.class" SelfReg="false"/>
+    <ROW File="IsiTunai.class" Component_="BerhasilEditData1.class" FileName="ISITUN~5.CLA|IsiTunai.class" Attributes="0" SourcePath="build\classes\Informasi\IsiTunai.class" SelfReg="false"/>
+    <ROW File="IsiTunai.form" Component_="BerhasilEditData1.class" FileName="ISITUN~1.FOR|IsiTunai.form" Attributes="0" SourcePath="build\classes\Informasi\IsiTunai.form" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword1.class" Component_="BerhasilEditData1.class" FileName="KONFIR~1.CLA|KonfirmasiPassword$1.class" Attributes="0" SourcePath="build\classes\Informasi\KonfirmasiPassword$1.class" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword2.class" Component_="BerhasilEditData1.class" FileName="KONFIR~2.CLA|KonfirmasiPassword$2.class" Attributes="0" SourcePath="build\classes\Informasi\KonfirmasiPassword$2.class" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword31.class" Component_="BerhasilEditData1.class" FileName="KONFIR~3.CLA|KonfirmasiPassword$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\KonfirmasiPassword$3$1.class" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword3.class" Component_="BerhasilEditData1.class" FileName="KONFIR~4.CLA|KonfirmasiPassword$3.class" Attributes="0" SourcePath="build\classes\Informasi\KonfirmasiPassword$3.class" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword.class" Component_="BerhasilEditData1.class" FileName="KONFIR~5.CLA|KonfirmasiPassword.class" Attributes="0" SourcePath="build\classes\Informasi\KonfirmasiPassword.class" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword.form" Component_="BerhasilEditData1.class" FileName="KONFIR~1.FOR|KonfirmasiPassword.form" Attributes="0" SourcePath="build\classes\Informasi\KonfirmasiPassword.form" SelfReg="false"/>
+    <ROW File="PembayaranKurang1.class" Component_="BerhasilEditData1.class" FileName="PEMBAY~1.CLA|PembayaranKurang$1.class" Attributes="0" SourcePath="build\classes\Informasi\PembayaranKurang$1.class" SelfReg="false"/>
+    <ROW File="PembayaranKurang2.class" Component_="BerhasilEditData1.class" FileName="PEMBAY~2.CLA|PembayaranKurang$2.class" Attributes="0" SourcePath="build\classes\Informasi\PembayaranKurang$2.class" SelfReg="false"/>
+    <ROW File="PembayaranKurang31.class" Component_="BerhasilEditData1.class" FileName="PEMBAY~3.CLA|PembayaranKurang$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\PembayaranKurang$3$1.class" SelfReg="false"/>
+    <ROW File="PembayaranKurang3.class" Component_="BerhasilEditData1.class" FileName="PEMBAY~4.CLA|PembayaranKurang$3.class" Attributes="0" SourcePath="build\classes\Informasi\PembayaranKurang$3.class" SelfReg="false"/>
+    <ROW File="PembayaranKurang.class" Component_="BerhasilEditData1.class" FileName="PEMBAY~5.CLA|PembayaranKurang.class" Attributes="0" SourcePath="build\classes\Informasi\PembayaranKurang.class" SelfReg="false"/>
+    <ROW File="PembayaranKurang.form" Component_="BerhasilEditData1.class" FileName="PEMBAY~1.FOR|PembayaranKurang.form" Attributes="0" SourcePath="build\classes\Informasi\PembayaranKurang.form" SelfReg="false"/>
+    <ROW File="PilihData1.class" Component_="BerhasilEditData1.class" FileName="PILIHD~1.CLA|PilihData$1.class" Attributes="0" SourcePath="build\classes\Informasi\PilihData$1.class" SelfReg="false"/>
+    <ROW File="PilihData2.class" Component_="BerhasilEditData1.class" FileName="PILIHD~2.CLA|PilihData$2.class" Attributes="0" SourcePath="build\classes\Informasi\PilihData$2.class" SelfReg="false"/>
+    <ROW File="PilihData31.class" Component_="BerhasilEditData1.class" FileName="PILIHD~3.CLA|PilihData$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\PilihData$3$1.class" SelfReg="false"/>
+    <ROW File="PilihData3.class" Component_="BerhasilEditData1.class" FileName="PILIHD~4.CLA|PilihData$3.class" Attributes="0" SourcePath="build\classes\Informasi\PilihData$3.class" SelfReg="false"/>
+    <ROW File="PilihData.class" Component_="BerhasilEditData1.class" FileName="PILIHD~5.CLA|PilihData.class" Attributes="0" SourcePath="build\classes\Informasi\PilihData.class" SelfReg="false"/>
+    <ROW File="PilihData.form" Component_="BerhasilEditData1.class" FileName="PILIHD~1.FOR|PilihData.form" Attributes="0" SourcePath="build\classes\Informasi\PilihData.form" SelfReg="false"/>
+    <ROW File="PilihTanggal1.class" Component_="BerhasilEditData1.class" FileName="PILIHT~1.CLA|PilihTanggal$1.class" Attributes="0" SourcePath="build\classes\Informasi\PilihTanggal$1.class" SelfReg="false"/>
+    <ROW File="PilihTanggal2.class" Component_="BerhasilEditData1.class" FileName="PILIHT~2.CLA|PilihTanggal$2.class" Attributes="0" SourcePath="build\classes\Informasi\PilihTanggal$2.class" SelfReg="false"/>
+    <ROW File="PilihTanggal31.class" Component_="BerhasilEditData1.class" FileName="PILIHT~3.CLA|PilihTanggal$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\PilihTanggal$3$1.class" SelfReg="false"/>
+    <ROW File="PilihTanggal3.class" Component_="BerhasilEditData1.class" FileName="PILIHT~4.CLA|PilihTanggal$3.class" Attributes="0" SourcePath="build\classes\Informasi\PilihTanggal$3.class" SelfReg="false"/>
+    <ROW File="PilihTanggal.class" Component_="BerhasilEditData1.class" FileName="PILIHT~5.CLA|PilihTanggal.class" Attributes="0" SourcePath="build\classes\Informasi\PilihTanggal.class" SelfReg="false"/>
+    <ROW File="PilihTanggal.form" Component_="BerhasilEditData1.class" FileName="PILIHT~1.FOR|PilihTanggal.form" Attributes="0" SourcePath="build\classes\Informasi\PilihTanggal.form" SelfReg="false"/>
+    <ROW File="ProdukHabis1.class" Component_="BerhasilEditData1.class" FileName="PRODUK~1.CLA|ProdukHabis$1.class" Attributes="0" SourcePath="build\classes\Informasi\ProdukHabis$1.class" SelfReg="false"/>
+    <ROW File="ProdukHabis2.class" Component_="BerhasilEditData1.class" FileName="PRODUK~2.CLA|ProdukHabis$2.class" Attributes="0" SourcePath="build\classes\Informasi\ProdukHabis$2.class" SelfReg="false"/>
+    <ROW File="ProdukHabis31.class" Component_="BerhasilEditData1.class" FileName="PRODUK~3.CLA|ProdukHabis$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\ProdukHabis$3$1.class" SelfReg="false"/>
+    <ROW File="ProdukHabis3.class" Component_="BerhasilEditData1.class" FileName="PRODUK~4.CLA|ProdukHabis$3.class" Attributes="0" SourcePath="build\classes\Informasi\ProdukHabis$3.class" SelfReg="false"/>
+    <ROW File="ProdukHabis.class" Component_="BerhasilEditData1.class" FileName="PRODUK~5.CLA|ProdukHabis.class" Attributes="0" SourcePath="build\classes\Informasi\ProdukHabis.class" SelfReg="false"/>
+    <ROW File="ProdukHabis.form" Component_="BerhasilEditData1.class" FileName="PRODUK~1.FOR|ProdukHabis.form" Attributes="0" SourcePath="build\classes\Informasi\ProdukHabis.form" SelfReg="false"/>
+    <ROW File="StokKurang1.class" Component_="BerhasilEditData1.class" FileName="STOKKU~1.CLA|StokKurang$1.class" Attributes="0" SourcePath="build\classes\Informasi\StokKurang$1.class" SelfReg="false"/>
+    <ROW File="StokKurang2.class" Component_="BerhasilEditData1.class" FileName="STOKKU~2.CLA|StokKurang$2.class" Attributes="0" SourcePath="build\classes\Informasi\StokKurang$2.class" SelfReg="false"/>
+    <ROW File="StokKurang31.class" Component_="BerhasilEditData1.class" FileName="STOKKU~3.CLA|StokKurang$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\StokKurang$3$1.class" SelfReg="false"/>
+    <ROW File="StokKurang3.class" Component_="BerhasilEditData1.class" FileName="STOKKU~4.CLA|StokKurang$3.class" Attributes="0" SourcePath="build\classes\Informasi\StokKurang$3.class" SelfReg="false"/>
+    <ROW File="StokKurang.class" Component_="BerhasilEditData1.class" FileName="STOKKU~5.CLA|StokKurang.class" Attributes="0" SourcePath="build\classes\Informasi\StokKurang.class" SelfReg="false"/>
+    <ROW File="StokKurang.form" Component_="BerhasilEditData1.class" FileName="STOKKU~1.FOR|StokKurang.form" Attributes="0" SourcePath="build\classes\Informasi\StokKurang.form" SelfReg="false"/>
+    <ROW File="TabelKosong1.class" Component_="BerhasilEditData1.class" FileName="TABELK~1.CLA|TabelKosong$1.class" Attributes="0" SourcePath="build\classes\Informasi\TabelKosong$1.class" SelfReg="false"/>
+    <ROW File="TabelKosong2.class" Component_="BerhasilEditData1.class" FileName="TABELK~2.CLA|TabelKosong$2.class" Attributes="0" SourcePath="build\classes\Informasi\TabelKosong$2.class" SelfReg="false"/>
+    <ROW File="TabelKosong31.class" Component_="BerhasilEditData1.class" FileName="TABELK~3.CLA|TabelKosong$3$1.class" Attributes="0" SourcePath="build\classes\Informasi\TabelKosong$3$1.class" SelfReg="false"/>
+    <ROW File="TabelKosong3.class" Component_="BerhasilEditData1.class" FileName="TABELK~4.CLA|TabelKosong$3.class" Attributes="0" SourcePath="build\classes\Informasi\TabelKosong$3.class" SelfReg="false"/>
+    <ROW File="TabelKosong.class" Component_="BerhasilEditData1.class" FileName="TABELK~5.CLA|TabelKosong.class" Attributes="0" SourcePath="build\classes\Informasi\TabelKosong.class" SelfReg="false"/>
+    <ROW File="TabelKosong.form" Component_="BerhasilEditData1.class" FileName="TABELK~1.FOR|TabelKosong.form" Attributes="0" SourcePath="build\classes\Informasi\TabelKosong.form" SelfReg="false"/>
+    <ROW File="DashboardKaryawan1.class" Component_="DashboardKaryawan1.class" FileName="DASHBO~1.CLA|DashboardKaryawan$1.class" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan$1.class" SelfReg="false"/>
+    <ROW File="DashboardKaryawan2.class" Component_="DashboardKaryawan1.class" FileName="DASHBO~2.CLA|DashboardKaryawan$2.class" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan$2.class" SelfReg="false"/>
+    <ROW File="DashboardKaryawan3.class" Component_="DashboardKaryawan1.class" FileName="DASHBO~3.CLA|DashboardKaryawan$3.class" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan$3.class" SelfReg="false"/>
+    <ROW File="DashboardKaryawan4.class" Component_="DashboardKaryawan1.class" FileName="DASHBO~4.CLA|DashboardKaryawan$4.class" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan$4.class" SelfReg="false"/>
+    <ROW File="DashboardKaryawan5.class" Component_="DashboardKaryawan1.class" FileName="DASHBO~5.CLA|DashboardKaryawan$5.class" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan$5.class" SelfReg="false"/>
+    <ROW File="DashboardKaryawan6.class" Component_="DashboardKaryawan1.class" FileName="DASHBO~6.CLA|DashboardKaryawan$6.class" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan$6.class" SelfReg="false"/>
+    <ROW File="DashboardKaryawan.class" Component_="DashboardKaryawan1.class" FileName="DASHBO~7.CLA|DashboardKaryawan.class" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan.class" SelfReg="false"/>
+    <ROW File="DashboardKaryawan.form" Component_="DashboardKaryawan1.class" FileName="DASHBO~1.FOR|DashboardKaryawan.form" Attributes="0" SourcePath="build\classes\Karyawan\DashboardKaryawan.form" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier1.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~1.CLA|MenghubungiSupplier$1.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$1.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier10.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~2.CLA|MenghubungiSupplier$10.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$10.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier2.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~3.CLA|MenghubungiSupplier$2.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$2.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier3.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~4.CLA|MenghubungiSupplier$3.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$3.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier4.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~5.CLA|MenghubungiSupplier$4.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$4.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier5.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~6.CLA|MenghubungiSupplier$5.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$5.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier6.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~7.CLA|MenghubungiSupplier$6.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$6.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier7.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~8.CLA|MenghubungiSupplier$7.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$7.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier8.class" Component_="DashboardKaryawan1.class" FileName="MENGHU~9.CLA|MenghubungiSupplier$8.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$8.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier9.class" Component_="DashboardKaryawan1.class" FileName="MENGH~10.CLA|MenghubungiSupplier$9.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier$9.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier.class" Component_="DashboardKaryawan1.class" FileName="MENGH~11.CLA|MenghubungiSupplier.class" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier.class" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier.form" Component_="DashboardKaryawan1.class" FileName="MENGHU~1.FOR|MenghubungiSupplier.form" Attributes="0" SourcePath="build\classes\Karyawan\MenghubungiSupplier.form" SelfReg="false"/>
+    <ROW File="MenuTransaksi1.class" Component_="DashboardKaryawan1.class" FileName="MENUTR~1.CLA|MenuTransaksi$1.class" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi$1.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi2.class" Component_="DashboardKaryawan1.class" FileName="MENUTR~2.CLA|MenuTransaksi$2.class" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi$2.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi3.class" Component_="DashboardKaryawan1.class" FileName="MENUTR~3.CLA|MenuTransaksi$3.class" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi$3.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi4.class" Component_="DashboardKaryawan1.class" FileName="MENUTR~4.CLA|MenuTransaksi$4.class" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi$4.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi5.class" Component_="DashboardKaryawan1.class" FileName="MENUTR~5.CLA|MenuTransaksi$5.class" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi$5.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi6.class" Component_="DashboardKaryawan1.class" FileName="MENUTR~6.CLA|MenuTransaksi$6.class" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi$6.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi.class" Component_="DashboardKaryawan1.class" FileName="MENUTR~7.CLA|MenuTransaksi.class" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi.class" SelfReg="false"/>
+    <ROW File="MenuTransaksi.form" Component_="DashboardKaryawan1.class" FileName="MENUTR~1.FOR|MenuTransaksi.form" Attributes="0" SourcePath="build\classes\Karyawan\MenuTransaksi.form" SelfReg="false"/>
+    <ROW File="StokProduk1.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~1.CLA|StokProduk$1.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$1.class" SelfReg="false"/>
+    <ROW File="StokProduk10.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~2.CLA|StokProduk$10.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$10.class" SelfReg="false"/>
+    <ROW File="StokProduk11.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~3.CLA|StokProduk$11.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$11.class" SelfReg="false"/>
+    <ROW File="StokProduk2.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~4.CLA|StokProduk$2.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$2.class" SelfReg="false"/>
+    <ROW File="StokProduk3.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~5.CLA|StokProduk$3.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$3.class" SelfReg="false"/>
+    <ROW File="StokProduk4.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~6.CLA|StokProduk$4.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$4.class" SelfReg="false"/>
+    <ROW File="StokProduk5.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~7.CLA|StokProduk$5.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$5.class" SelfReg="false"/>
+    <ROW File="StokProduk6.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~8.CLA|StokProduk$6.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$6.class" SelfReg="false"/>
+    <ROW File="StokProduk7.class" Component_="DashboardKaryawan1.class" FileName="STOKPR~9.CLA|StokProduk$7.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$7.class" SelfReg="false"/>
+    <ROW File="StokProduk8.class" Component_="DashboardKaryawan1.class" FileName="STOKP~10.CLA|StokProduk$8.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$8.class" SelfReg="false"/>
+    <ROW File="StokProduk9.class" Component_="DashboardKaryawan1.class" FileName="STOKP~11.CLA|StokProduk$9.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk$9.class" SelfReg="false"/>
+    <ROW File="StokProduk.class" Component_="DashboardKaryawan1.class" FileName="STOKP~12.CLA|StokProduk.class" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk.class" SelfReg="false"/>
+    <ROW File="StokProduk.form" Component_="DashboardKaryawan1.class" FileName="STOKPR~1.FOR|StokProduk.form" Attributes="0" SourcePath="build\classes\Karyawan\StokProduk.form" SelfReg="false"/>
+    <ROW File="TransaksiBeli1.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~1.CLA|TransaksiBeli$1.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$1.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli10.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~2.CLA|TransaksiBeli$10.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$10.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli11.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~3.CLA|TransaksiBeli$11.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$11.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli12.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~4.CLA|TransaksiBeli$12.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$12.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli13.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~5.CLA|TransaksiBeli$13.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$13.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli14.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~6.CLA|TransaksiBeli$14.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$14.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli15.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~7.CLA|TransaksiBeli$15.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$15.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli16.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~8.CLA|TransaksiBeli$16.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$16.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli17.class" Component_="DashboardKaryawan1.class" FileName="TRANSA~9.CLA|TransaksiBeli$17.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$17.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli18.class" Component_="DashboardKaryawan1.class" FileName="TRANS~10.CLA|TransaksiBeli$18.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$18.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli19.class" Component_="DashboardKaryawan1.class" FileName="TRANS~11.CLA|TransaksiBeli$19.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$19.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli2.class" Component_="DashboardKaryawan1.class" FileName="TRANS~12.CLA|TransaksiBeli$2.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$2.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli20.class" Component_="DashboardKaryawan1.class" FileName="TRANS~13.CLA|TransaksiBeli$20.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$20.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli21.class" Component_="DashboardKaryawan1.class" FileName="TRANS~14.CLA|TransaksiBeli$21.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$21.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli3.class" Component_="DashboardKaryawan1.class" FileName="TRANS~15.CLA|TransaksiBeli$3.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$3.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli4.class" Component_="DashboardKaryawan1.class" FileName="TRANS~16.CLA|TransaksiBeli$4.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$4.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli5.class" Component_="DashboardKaryawan1.class" FileName="TRANS~17.CLA|TransaksiBeli$5.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$5.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli6.class" Component_="DashboardKaryawan1.class" FileName="TRANS~18.CLA|TransaksiBeli$6.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$6.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli7.class" Component_="DashboardKaryawan1.class" FileName="TRANS~19.CLA|TransaksiBeli$7.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$7.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli8.class" Component_="DashboardKaryawan1.class" FileName="TRANS~20.CLA|TransaksiBeli$8.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$8.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli9.class" Component_="DashboardKaryawan1.class" FileName="TRANS~21.CLA|TransaksiBeli$9.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli$9.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli.class" Component_="DashboardKaryawan1.class" FileName="TRANS~22.CLA|TransaksiBeli.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli.class" SelfReg="false"/>
+    <ROW File="TransaksiBeli.form" Component_="DashboardKaryawan1.class" FileName="TRANSA~1.FOR|TransaksiBeli.form" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiBeli.form" SelfReg="false"/>
+    <ROW File="TransaksiJual1.class" Component_="DashboardKaryawan1.class" FileName="TRANS~23.CLA|TransaksiJual$1.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$1.class" SelfReg="false"/>
+    <ROW File="TransaksiJual10.class" Component_="DashboardKaryawan1.class" FileName="TRANS~24.CLA|TransaksiJual$10.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$10.class" SelfReg="false"/>
+    <ROW File="TransaksiJual11.class" Component_="DashboardKaryawan1.class" FileName="TRANS~25.CLA|TransaksiJual$11.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$11.class" SelfReg="false"/>
+    <ROW File="TransaksiJual12.class" Component_="DashboardKaryawan1.class" FileName="TRANS~26.CLA|TransaksiJual$12.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$12.class" SelfReg="false"/>
+    <ROW File="TransaksiJual13.class" Component_="DashboardKaryawan1.class" FileName="TRANS~27.CLA|TransaksiJual$13.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$13.class" SelfReg="false"/>
+    <ROW File="TransaksiJual14.class" Component_="DashboardKaryawan1.class" FileName="TRANS~28.CLA|TransaksiJual$14.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$14.class" SelfReg="false"/>
+    <ROW File="TransaksiJual15.class" Component_="DashboardKaryawan1.class" FileName="TRANS~29.CLA|TransaksiJual$15.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$15.class" SelfReg="false"/>
+    <ROW File="TransaksiJual16.class" Component_="DashboardKaryawan1.class" FileName="TRANS~30.CLA|TransaksiJual$16.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$16.class" SelfReg="false"/>
+    <ROW File="TransaksiJual17.class" Component_="DashboardKaryawan1.class" FileName="TRANS~31.CLA|TransaksiJual$17.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$17.class" SelfReg="false"/>
+    <ROW File="TransaksiJual18.class" Component_="DashboardKaryawan1.class" FileName="TRANS~32.CLA|TransaksiJual$18.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$18.class" SelfReg="false"/>
+    <ROW File="TransaksiJual2.class" Component_="DashboardKaryawan1.class" FileName="TRANS~33.CLA|TransaksiJual$2.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$2.class" SelfReg="false"/>
+    <ROW File="TransaksiJual3.class" Component_="DashboardKaryawan1.class" FileName="TRANS~34.CLA|TransaksiJual$3.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$3.class" SelfReg="false"/>
+    <ROW File="TransaksiJual4.class" Component_="DashboardKaryawan1.class" FileName="TRANS~35.CLA|TransaksiJual$4.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$4.class" SelfReg="false"/>
+    <ROW File="TransaksiJual5.class" Component_="DashboardKaryawan1.class" FileName="TRANS~36.CLA|TransaksiJual$5.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$5.class" SelfReg="false"/>
+    <ROW File="TransaksiJual6.class" Component_="DashboardKaryawan1.class" FileName="TRANS~37.CLA|TransaksiJual$6.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$6.class" SelfReg="false"/>
+    <ROW File="TransaksiJual7.class" Component_="DashboardKaryawan1.class" FileName="TRANS~38.CLA|TransaksiJual$7.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$7.class" SelfReg="false"/>
+    <ROW File="TransaksiJual8.class" Component_="DashboardKaryawan1.class" FileName="TRANS~39.CLA|TransaksiJual$8.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$8.class" SelfReg="false"/>
+    <ROW File="TransaksiJual9.class" Component_="DashboardKaryawan1.class" FileName="TRANS~40.CLA|TransaksiJual$9.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual$9.class" SelfReg="false"/>
+    <ROW File="TransaksiJual.class" Component_="DashboardKaryawan1.class" FileName="TRANS~41.CLA|TransaksiJual.class" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual.class" SelfReg="false"/>
+    <ROW File="TransaksiJual.form" Component_="DashboardKaryawan1.class" FileName="TRANSA~2.FOR|TransaksiJual.form" Attributes="0" SourcePath="build\classes\Karyawan\TransaksiJual.form" SelfReg="false"/>
+    <ROW File="BarChartPendapatan.class" Component_="BarChartPendapatan.class" FileName="BARCHA~1.CLA|BarChartPendapatan.class" Attributes="0" SourcePath="build\classes\Main\BarChartPendapatan.class" SelfReg="false"/>
+    <ROW File="BarChartPengeluaran.class" Component_="BarChartPendapatan.class" FileName="BARCHA~2.CLA|BarChartPengeluaran.class" Attributes="0" SourcePath="build\classes\Main\BarChartPengeluaran.class" SelfReg="false"/>
+    <ROW File="BarChartProduk.class" Component_="BarChartPendapatan.class" FileName="BARCHA~3.CLA|BarChartProduk.class" Attributes="0" SourcePath="build\classes\Main\BarChartProduk.class" SelfReg="false"/>
+    <ROW File="Koneksi.class" Component_="BarChartPendapatan.class" FileName="KONEKS~1.CLA|Koneksi.class" Attributes="0" SourcePath="build\classes\Main\Koneksi.class" SelfReg="false"/>
+    <ROW File="Rupiah.class" Component_="BarChartPendapatan.class" FileName="RUPIAH~1.CLA|Rupiah.class" Attributes="0" SourcePath="build\classes\Main\Rupiah.class" SelfReg="false"/>
+    <ROW File="TestEnter1.class" Component_="BarChartPendapatan.class" FileName="TESTEN~1.CLA|TestEnter$1.class" Attributes="0" SourcePath="build\classes\Main\TestEnter$1.class" SelfReg="false"/>
+    <ROW File="TestEnter.class" Component_="BarChartPendapatan.class" FileName="TESTEN~2.CLA|TestEnter.class" Attributes="0" SourcePath="build\classes\Main\TestEnter.class" SelfReg="false"/>
+    <ROW File="Waktu1.class" Component_="BarChartPendapatan.class" FileName="WAKTU$~1.CLA|Waktu$1.class" Attributes="0" SourcePath="build\classes\Main\Waktu$1.class" SelfReg="false"/>
+    <ROW File="Waktu.class" Component_="BarChartPendapatan.class" FileName="WAKTU~1.CLA|Waktu.class" Attributes="0" SourcePath="build\classes\Main\Waktu.class" SelfReg="false"/>
+    <ROW File="DashboardOwner1.class" Component_="DashboardOwner1.class" FileName="DASHBO~1.CLA|DashboardOwner$1.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner$1.class" SelfReg="false"/>
+    <ROW File="DashboardOwner2.class" Component_="DashboardOwner1.class" FileName="DASHBO~2.CLA|DashboardOwner$2.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner$2.class" SelfReg="false"/>
+    <ROW File="DashboardOwner3.class" Component_="DashboardOwner1.class" FileName="DASHBO~3.CLA|DashboardOwner$3.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner$3.class" SelfReg="false"/>
+    <ROW File="DashboardOwner4.class" Component_="DashboardOwner1.class" FileName="DASHBO~4.CLA|DashboardOwner$4.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner$4.class" SelfReg="false"/>
+    <ROW File="DashboardOwner5.class" Component_="DashboardOwner1.class" FileName="DASHBO~5.CLA|DashboardOwner$5.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner$5.class" SelfReg="false"/>
+    <ROW File="DashboardOwner6.class" Component_="DashboardOwner1.class" FileName="DASHBO~6.CLA|DashboardOwner$6.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner$6.class" SelfReg="false"/>
+    <ROW File="DashboardOwner7.class" Component_="DashboardOwner1.class" FileName="DASHBO~7.CLA|DashboardOwner$7.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner$7.class" SelfReg="false"/>
+    <ROW File="DashboardOwner.class" Component_="DashboardOwner1.class" FileName="DASHBO~8.CLA|DashboardOwner.class" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner.class" SelfReg="false"/>
+    <ROW File="DashboardOwner.form" Component_="DashboardOwner1.class" FileName="DASHBO~1.FOR|DashboardOwner.form" Attributes="0" SourcePath="build\classes\Owner\DashboardOwner.form" SelfReg="false"/>
+    <ROW File="DataKaryawan1.class" Component_="DashboardOwner1.class" FileName="DATAKA~1.CLA|DataKaryawan$1.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$1.class" SelfReg="false"/>
+    <ROW File="DataKaryawan10.class" Component_="DashboardOwner1.class" FileName="DATAKA~2.CLA|DataKaryawan$10.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$10.class" SelfReg="false"/>
+    <ROW File="DataKaryawan2.class" Component_="DashboardOwner1.class" FileName="DATAKA~3.CLA|DataKaryawan$2.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$2.class" SelfReg="false"/>
+    <ROW File="DataKaryawan3.class" Component_="DashboardOwner1.class" FileName="DATAKA~4.CLA|DataKaryawan$3.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$3.class" SelfReg="false"/>
+    <ROW File="DataKaryawan4.class" Component_="DashboardOwner1.class" FileName="DATAKA~5.CLA|DataKaryawan$4.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$4.class" SelfReg="false"/>
+    <ROW File="DataKaryawan5.class" Component_="DashboardOwner1.class" FileName="DATAKA~6.CLA|DataKaryawan$5.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$5.class" SelfReg="false"/>
+    <ROW File="DataKaryawan6.class" Component_="DashboardOwner1.class" FileName="DATAKA~7.CLA|DataKaryawan$6.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$6.class" SelfReg="false"/>
+    <ROW File="DataKaryawan7.class" Component_="DashboardOwner1.class" FileName="DATAKA~8.CLA|DataKaryawan$7.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$7.class" SelfReg="false"/>
+    <ROW File="DataKaryawan8.class" Component_="DashboardOwner1.class" FileName="DATAKA~9.CLA|DataKaryawan$8.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$8.class" SelfReg="false"/>
+    <ROW File="DataKaryawan9.class" Component_="DashboardOwner1.class" FileName="DATAK~10.CLA|DataKaryawan$9.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan$9.class" SelfReg="false"/>
+    <ROW File="DataKaryawan.class" Component_="DashboardOwner1.class" FileName="DATAK~11.CLA|DataKaryawan.class" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan.class" SelfReg="false"/>
+    <ROW File="DataKaryawan.form" Component_="DashboardOwner1.class" FileName="DATAKA~1.FOR|DataKaryawan.form" Attributes="0" SourcePath="build\classes\Owner\DataKaryawan.form" SelfReg="false"/>
+    <ROW File="DataMember1.class" Component_="DashboardOwner1.class" FileName="DATAME~1.CLA|DataMember$1.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$1.class" SelfReg="false"/>
+    <ROW File="DataMember2.class" Component_="DashboardOwner1.class" FileName="DATAME~2.CLA|DataMember$2.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$2.class" SelfReg="false"/>
+    <ROW File="DataMember3.class" Component_="DashboardOwner1.class" FileName="DATAME~3.CLA|DataMember$3.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$3.class" SelfReg="false"/>
+    <ROW File="DataMember4.class" Component_="DashboardOwner1.class" FileName="DATAME~4.CLA|DataMember$4.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$4.class" SelfReg="false"/>
+    <ROW File="DataMember5.class" Component_="DashboardOwner1.class" FileName="DATAME~5.CLA|DataMember$5.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$5.class" SelfReg="false"/>
+    <ROW File="DataMember6.class" Component_="DashboardOwner1.class" FileName="DATAME~6.CLA|DataMember$6.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$6.class" SelfReg="false"/>
+    <ROW File="DataMember7.class" Component_="DashboardOwner1.class" FileName="DATAME~7.CLA|DataMember$7.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$7.class" SelfReg="false"/>
+    <ROW File="DataMember8.class" Component_="DashboardOwner1.class" FileName="DATAME~8.CLA|DataMember$8.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$8.class" SelfReg="false"/>
+    <ROW File="DataMember9.class" Component_="DashboardOwner1.class" FileName="DATAME~9.CLA|DataMember$9.class" Attributes="0" SourcePath="build\classes\Owner\DataMember$9.class" SelfReg="false"/>
+    <ROW File="DataMember.class" Component_="DashboardOwner1.class" FileName="DATAM~10.CLA|DataMember.class" Attributes="0" SourcePath="build\classes\Owner\DataMember.class" SelfReg="false"/>
+    <ROW File="DataMember.form" Component_="DashboardOwner1.class" FileName="DATAME~1.FOR|DataMember.form" Attributes="0" SourcePath="build\classes\Owner\DataMember.form" SelfReg="false"/>
+    <ROW File="DataProduk1.class" Component_="DashboardOwner1.class" FileName="DATAPR~1.CLA|DataProduk$1.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$1.class" SelfReg="false"/>
+    <ROW File="DataProduk10.class" Component_="DashboardOwner1.class" FileName="DATAPR~2.CLA|DataProduk$10.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$10.class" SelfReg="false"/>
+    <ROW File="DataProduk2.class" Component_="DashboardOwner1.class" FileName="DATAPR~3.CLA|DataProduk$2.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$2.class" SelfReg="false"/>
+    <ROW File="DataProduk3.class" Component_="DashboardOwner1.class" FileName="DATAPR~4.CLA|DataProduk$3.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$3.class" SelfReg="false"/>
+    <ROW File="DataProduk4.class" Component_="DashboardOwner1.class" FileName="DATAPR~5.CLA|DataProduk$4.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$4.class" SelfReg="false"/>
+    <ROW File="DataProduk5.class" Component_="DashboardOwner1.class" FileName="DATAPR~6.CLA|DataProduk$5.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$5.class" SelfReg="false"/>
+    <ROW File="DataProduk6.class" Component_="DashboardOwner1.class" FileName="DATAPR~7.CLA|DataProduk$6.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$6.class" SelfReg="false"/>
+    <ROW File="DataProduk7.class" Component_="DashboardOwner1.class" FileName="DATAPR~8.CLA|DataProduk$7.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$7.class" SelfReg="false"/>
+    <ROW File="DataProduk8.class" Component_="DashboardOwner1.class" FileName="DATAPR~9.CLA|DataProduk$8.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$8.class" SelfReg="false"/>
+    <ROW File="DataProduk9.class" Component_="DashboardOwner1.class" FileName="DATAP~10.CLA|DataProduk$9.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk$9.class" SelfReg="false"/>
+    <ROW File="DataProduk.class" Component_="DashboardOwner1.class" FileName="DATAP~11.CLA|DataProduk.class" Attributes="0" SourcePath="build\classes\Owner\DataProduk.class" SelfReg="false"/>
+    <ROW File="DataProduk.form" Component_="DashboardOwner1.class" FileName="DATAPR~1.FOR|DataProduk.form" Attributes="0" SourcePath="build\classes\Owner\DataProduk.form" SelfReg="false"/>
+    <ROW File="DataSupplier1.class" Component_="DashboardOwner1.class" FileName="DATASU~1.CLA|DataSupplier$1.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$1.class" SelfReg="false"/>
+    <ROW File="DataSupplier2.class" Component_="DashboardOwner1.class" FileName="DATASU~2.CLA|DataSupplier$2.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$2.class" SelfReg="false"/>
+    <ROW File="DataSupplier3.class" Component_="DashboardOwner1.class" FileName="DATASU~3.CLA|DataSupplier$3.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$3.class" SelfReg="false"/>
+    <ROW File="DataSupplier4.class" Component_="DashboardOwner1.class" FileName="DATASU~4.CLA|DataSupplier$4.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$4.class" SelfReg="false"/>
+    <ROW File="DataSupplier5.class" Component_="DashboardOwner1.class" FileName="DATASU~5.CLA|DataSupplier$5.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$5.class" SelfReg="false"/>
+    <ROW File="DataSupplier6.class" Component_="DashboardOwner1.class" FileName="DATASU~6.CLA|DataSupplier$6.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$6.class" SelfReg="false"/>
+    <ROW File="DataSupplier7.class" Component_="DashboardOwner1.class" FileName="DATASU~7.CLA|DataSupplier$7.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$7.class" SelfReg="false"/>
+    <ROW File="DataSupplier8.class" Component_="DashboardOwner1.class" FileName="DATASU~8.CLA|DataSupplier$8.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$8.class" SelfReg="false"/>
+    <ROW File="DataSupplier9.class" Component_="DashboardOwner1.class" FileName="DATASU~9.CLA|DataSupplier$9.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier$9.class" SelfReg="false"/>
+    <ROW File="DataSupplier.class" Component_="DashboardOwner1.class" FileName="DATAS~10.CLA|DataSupplier.class" Attributes="0" SourcePath="build\classes\Owner\DataSupplier.class" SelfReg="false"/>
+    <ROW File="DataSupplier.form" Component_="DashboardOwner1.class" FileName="DATASU~1.FOR|DataSupplier.form" Attributes="0" SourcePath="build\classes\Owner\DataSupplier.form" SelfReg="false"/>
+    <ROW File="LaporanPendapatan1.class" Component_="DashboardOwner1.class" FileName="LAPORA~1.CLA|LaporanPendapatan$1.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$1.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan10.class" Component_="DashboardOwner1.class" FileName="LAPORA~2.CLA|LaporanPendapatan$10.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$10.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan11.class" Component_="DashboardOwner1.class" FileName="LAPORA~3.CLA|LaporanPendapatan$11.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$11.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan12.class" Component_="DashboardOwner1.class" FileName="LAPORA~4.CLA|LaporanPendapatan$12.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$12.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan13.class" Component_="DashboardOwner1.class" FileName="LAPORA~5.CLA|LaporanPendapatan$13.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$13.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan14.class" Component_="DashboardOwner1.class" FileName="LAPORA~6.CLA|LaporanPendapatan$14.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$14.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan15.class" Component_="DashboardOwner1.class" FileName="LAPORA~7.CLA|LaporanPendapatan$15.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$15.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan16.class" Component_="DashboardOwner1.class" FileName="LAPORA~8.CLA|LaporanPendapatan$16.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$16.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan17.class" Component_="DashboardOwner1.class" FileName="LAPORA~9.CLA|LaporanPendapatan$17.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$17.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan2.class" Component_="DashboardOwner1.class" FileName="LAPOR~10.CLA|LaporanPendapatan$2.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$2.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan3.class" Component_="DashboardOwner1.class" FileName="LAPOR~11.CLA|LaporanPendapatan$3.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$3.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan4.class" Component_="DashboardOwner1.class" FileName="LAPOR~12.CLA|LaporanPendapatan$4.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$4.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan5.class" Component_="DashboardOwner1.class" FileName="LAPOR~13.CLA|LaporanPendapatan$5.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$5.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan6.class" Component_="DashboardOwner1.class" FileName="LAPOR~14.CLA|LaporanPendapatan$6.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$6.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan7.class" Component_="DashboardOwner1.class" FileName="LAPOR~15.CLA|LaporanPendapatan$7.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$7.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan8.class" Component_="DashboardOwner1.class" FileName="LAPOR~16.CLA|LaporanPendapatan$8.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$8.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan9.class" Component_="DashboardOwner1.class" FileName="LAPOR~17.CLA|LaporanPendapatan$9.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan$9.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan.class" Component_="DashboardOwner1.class" FileName="LAPOR~18.CLA|LaporanPendapatan.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan.class" SelfReg="false"/>
+    <ROW File="LaporanPendapatan.form" Component_="DashboardOwner1.class" FileName="LAPORA~1.FOR|LaporanPendapatan.form" Attributes="0" SourcePath="build\classes\Owner\LaporanPendapatan.form" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran1.class" Component_="DashboardOwner1.class" FileName="LAPOR~19.CLA|LaporanPengeluaran$1.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$1.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran10.class" Component_="DashboardOwner1.class" FileName="LAPOR~20.CLA|LaporanPengeluaran$10.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$10.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran11.class" Component_="DashboardOwner1.class" FileName="LAPOR~21.CLA|LaporanPengeluaran$11.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$11.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran12.class" Component_="DashboardOwner1.class" FileName="LAPOR~22.CLA|LaporanPengeluaran$12.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$12.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran13.class" Component_="DashboardOwner1.class" FileName="LAPOR~23.CLA|LaporanPengeluaran$13.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$13.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran14.class" Component_="DashboardOwner1.class" FileName="LAPOR~24.CLA|LaporanPengeluaran$14.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$14.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran15.class" Component_="DashboardOwner1.class" FileName="LAPOR~25.CLA|LaporanPengeluaran$15.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$15.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran16.class" Component_="DashboardOwner1.class" FileName="LAPOR~26.CLA|LaporanPengeluaran$16.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$16.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran17.class" Component_="DashboardOwner1.class" FileName="LAPOR~27.CLA|LaporanPengeluaran$17.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$17.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran2.class" Component_="DashboardOwner1.class" FileName="LAPOR~28.CLA|LaporanPengeluaran$2.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$2.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran3.class" Component_="DashboardOwner1.class" FileName="LAPOR~29.CLA|LaporanPengeluaran$3.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$3.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran4.class" Component_="DashboardOwner1.class" FileName="LAPOR~30.CLA|LaporanPengeluaran$4.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$4.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran5.class" Component_="DashboardOwner1.class" FileName="LAPOR~31.CLA|LaporanPengeluaran$5.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$5.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran6.class" Component_="DashboardOwner1.class" FileName="LAPOR~32.CLA|LaporanPengeluaran$6.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$6.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran7.class" Component_="DashboardOwner1.class" FileName="LAPOR~33.CLA|LaporanPengeluaran$7.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$7.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran8.class" Component_="DashboardOwner1.class" FileName="LAPOR~34.CLA|LaporanPengeluaran$8.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$8.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran9.class" Component_="DashboardOwner1.class" FileName="LAPOR~35.CLA|LaporanPengeluaran$9.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran$9.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran.class" Component_="DashboardOwner1.class" FileName="LAPOR~36.CLA|LaporanPengeluaran.class" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran.class" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran.form" Component_="DashboardOwner1.class" FileName="LAPORA~2.FOR|LaporanPengeluaran.form" Attributes="0" SourcePath="build\classes\Owner\LaporanPengeluaran.form" SelfReg="false"/>
+    <ROW File="MenuOwner1.class" Component_="DashboardOwner1.class" FileName="MENUOW~1.CLA|MenuOwner$1.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$1.class" SelfReg="false"/>
+    <ROW File="MenuOwner2.class" Component_="DashboardOwner1.class" FileName="MENUOW~2.CLA|MenuOwner$2.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$2.class" SelfReg="false"/>
+    <ROW File="MenuOwner3.class" Component_="DashboardOwner1.class" FileName="MENUOW~3.CLA|MenuOwner$3.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$3.class" SelfReg="false"/>
+    <ROW File="MenuOwner4.class" Component_="DashboardOwner1.class" FileName="MENUOW~4.CLA|MenuOwner$4.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$4.class" SelfReg="false"/>
+    <ROW File="MenuOwner5.class" Component_="DashboardOwner1.class" FileName="MENUOW~5.CLA|MenuOwner$5.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$5.class" SelfReg="false"/>
+    <ROW File="MenuOwner6.class" Component_="DashboardOwner1.class" FileName="MENUOW~6.CLA|MenuOwner$6.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$6.class" SelfReg="false"/>
+    <ROW File="MenuOwner7.class" Component_="DashboardOwner1.class" FileName="MENUOW~7.CLA|MenuOwner$7.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$7.class" SelfReg="false"/>
+    <ROW File="MenuOwner8.class" Component_="DashboardOwner1.class" FileName="MENUOW~8.CLA|MenuOwner$8.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner$8.class" SelfReg="false"/>
+    <ROW File="MenuOwner.class" Component_="DashboardOwner1.class" FileName="MENUOW~9.CLA|MenuOwner.class" Attributes="0" SourcePath="build\classes\Owner\MenuOwner.class" SelfReg="false"/>
+    <ROW File="MenuOwner.form" Component_="DashboardOwner1.class" FileName="MENUOW~1.FOR|MenuOwner.form" Attributes="0" SourcePath="build\classes\Owner\MenuOwner.form" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli1.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~1.CLA|BerhasilTransaksiBeli$1.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiBeli$1.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli2.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~2.CLA|BerhasilTransaksiBeli$2.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiBeli$2.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli31.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~3.CLA|BerhasilTransaksiBeli$3$1.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiBeli$3$1.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli3.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~4.CLA|BerhasilTransaksiBeli$3.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiBeli$3.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~5.CLA|BerhasilTransaksiBeli.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiBeli.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli.form" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~1.FOR|BerhasilTransaksiBeli.form" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiBeli.form" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual1.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~6.CLA|BerhasilTransaksiJual$1.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiJual$1.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual2.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~7.CLA|BerhasilTransaksiJual$2.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiJual$2.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual31.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~8.CLA|BerhasilTransaksiJual$3$1.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiJual$3$1.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual3.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~9.CLA|BerhasilTransaksiJual$3.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiJual$3.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual.class" Component_="BerhasilTransaksiBeli1.class" FileName="BERHA~10.CLA|BerhasilTransaksiJual.class" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiJual.class" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual.form" Component_="BerhasilTransaksiBeli1.class" FileName="BERHAS~2.FOR|BerhasilTransaksiJual.form" Attributes="0" SourcePath="build\classes\PopUp\BerhasilTransaksiJual.form" SelfReg="false"/>
+    <ROW File="DaftarKaryawan1.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~1.CLA|DaftarKaryawan$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$1.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan101.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~2.CLA|DaftarKaryawan$10$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$10$1.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan10.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~3.CLA|DaftarKaryawan$10.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$10.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan2.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~4.CLA|DaftarKaryawan$2.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$2.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan3.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~5.CLA|DaftarKaryawan$3.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$3.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan4.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~6.CLA|DaftarKaryawan$4.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$4.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan5.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~7.CLA|DaftarKaryawan$5.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$5.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan6.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~8.CLA|DaftarKaryawan$6.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$6.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan7.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~9.CLA|DaftarKaryawan$7.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$7.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan8.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~10.CLA|DaftarKaryawan$8.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$8.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan91.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~11.CLA|DaftarKaryawan$9$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$9$1.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan9.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~12.CLA|DaftarKaryawan$9.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan$9.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~13.CLA|DaftarKaryawan.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan.class" SelfReg="false"/>
+    <ROW File="DaftarKaryawan.form" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~1.FOR|DaftarKaryawan.form" Attributes="0" SourcePath="build\classes\PopUp\DaftarKaryawan.form" SelfReg="false"/>
+    <ROW File="DaftarMember1.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~14.CLA|DaftarMember$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember$1.class" SelfReg="false"/>
+    <ROW File="DaftarMember2.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~15.CLA|DaftarMember$2.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember$2.class" SelfReg="false"/>
+    <ROW File="DaftarMember3.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~16.CLA|DaftarMember$3.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember$3.class" SelfReg="false"/>
+    <ROW File="DaftarMember41.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~17.CLA|DaftarMember$4$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember$4$1.class" SelfReg="false"/>
+    <ROW File="DaftarMember4.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~18.CLA|DaftarMember$4.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember$4.class" SelfReg="false"/>
+    <ROW File="DaftarMember51.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~19.CLA|DaftarMember$5$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember$5$1.class" SelfReg="false"/>
+    <ROW File="DaftarMember5.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~20.CLA|DaftarMember$5.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember$5.class" SelfReg="false"/>
+    <ROW File="DaftarMember.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~21.CLA|DaftarMember.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember.class" SelfReg="false"/>
+    <ROW File="DaftarMember.form" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~2.FOR|DaftarMember.form" Attributes="0" SourcePath="build\classes\PopUp\DaftarMember.form" SelfReg="false"/>
+    <ROW File="DaftarProduk1.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~22.CLA|DaftarProduk$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk$1.class" SelfReg="false"/>
+    <ROW File="DaftarProduk2.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~23.CLA|DaftarProduk$2.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk$2.class" SelfReg="false"/>
+    <ROW File="DaftarProduk3.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~24.CLA|DaftarProduk$3.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk$3.class" SelfReg="false"/>
+    <ROW File="DaftarProduk4.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~25.CLA|DaftarProduk$4.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk$4.class" SelfReg="false"/>
+    <ROW File="DaftarProduk5.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~26.CLA|DaftarProduk$5.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk$5.class" SelfReg="false"/>
+    <ROW File="DaftarProduk61.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~27.CLA|DaftarProduk$6$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk$6$1.class" SelfReg="false"/>
+    <ROW File="DaftarProduk6.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~28.CLA|DaftarProduk$6.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk$6.class" SelfReg="false"/>
+    <ROW File="DaftarProduk.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~29.CLA|DaftarProduk.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk.class" SelfReg="false"/>
+    <ROW File="DaftarProduk.form" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~3.FOR|DaftarProduk.form" Attributes="0" SourcePath="build\classes\PopUp\DaftarProduk.form" SelfReg="false"/>
+    <ROW File="DaftarSupplier1.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~30.CLA|DaftarSupplier$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier$1.class" SelfReg="false"/>
+    <ROW File="DaftarSupplier2.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~31.CLA|DaftarSupplier$2.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier$2.class" SelfReg="false"/>
+    <ROW File="DaftarSupplier3.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~32.CLA|DaftarSupplier$3.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier$3.class" SelfReg="false"/>
+    <ROW File="DaftarSupplier4.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~33.CLA|DaftarSupplier$4.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier$4.class" SelfReg="false"/>
+    <ROW File="DaftarSupplier51.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~34.CLA|DaftarSupplier$5$1.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier$5$1.class" SelfReg="false"/>
+    <ROW File="DaftarSupplier5.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~35.CLA|DaftarSupplier$5.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier$5.class" SelfReg="false"/>
+    <ROW File="DaftarSupplier.class" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTA~36.CLA|DaftarSupplier.class" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier.class" SelfReg="false"/>
+    <ROW File="DaftarSupplier.form" Component_="BerhasilTransaksiBeli1.class" FileName="DAFTAR~4.FOR|DaftarSupplier.form" Attributes="0" SourcePath="build\classes\PopUp\DaftarSupplier.form" SelfReg="false"/>
+    <ROW File="DetailTransaksiBeli1.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~1.CLA|DetailTransaksiBeli$1.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiBeli$1.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiBeli21.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~2.CLA|DetailTransaksiBeli$2$1.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiBeli$2$1.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiBeli2.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~3.CLA|DetailTransaksiBeli$2.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiBeli$2.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiBeli.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~4.CLA|DetailTransaksiBeli.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiBeli.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiBeli.form" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~1.FOR|DetailTransaksiBeli.form" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiBeli.form" SelfReg="false"/>
+    <ROW File="DetailTransaksiJual1.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~5.CLA|DetailTransaksiJual$1.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiJual$1.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiJual21.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~6.CLA|DetailTransaksiJual$2$1.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiJual$2$1.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiJual2.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~7.CLA|DetailTransaksiJual$2.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiJual$2.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiJual.class" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~8.CLA|DetailTransaksiJual.class" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiJual.class" SelfReg="false"/>
+    <ROW File="DetailTransaksiJual.form" Component_="BerhasilTransaksiBeli1.class" FileName="DETAIL~2.FOR|DetailTransaksiJual.form" Attributes="0" SourcePath="build\classes\PopUp\DetailTransaksiJual.form" SelfReg="false"/>
+    <ROW File="GantiPassword1.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~1.CLA|GantiPassword$1.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$1.class" SelfReg="false"/>
+    <ROW File="GantiPassword10.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~2.CLA|GantiPassword$10.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$10.class" SelfReg="false"/>
+    <ROW File="GantiPassword11.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~3.CLA|GantiPassword$11.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$11.class" SelfReg="false"/>
+    <ROW File="GantiPassword121.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~4.CLA|GantiPassword$12$1.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$12$1.class" SelfReg="false"/>
+    <ROW File="GantiPassword12.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~5.CLA|GantiPassword$12.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$12.class" SelfReg="false"/>
+    <ROW File="GantiPassword2.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~6.CLA|GantiPassword$2.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$2.class" SelfReg="false"/>
+    <ROW File="GantiPassword3.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~7.CLA|GantiPassword$3.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$3.class" SelfReg="false"/>
+    <ROW File="GantiPassword4.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~8.CLA|GantiPassword$4.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$4.class" SelfReg="false"/>
+    <ROW File="GantiPassword5.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~9.CLA|GantiPassword$5.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$5.class" SelfReg="false"/>
+    <ROW File="GantiPassword6.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTI~10.CLA|GantiPassword$6.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$6.class" SelfReg="false"/>
+    <ROW File="GantiPassword7.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTI~11.CLA|GantiPassword$7.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$7.class" SelfReg="false"/>
+    <ROW File="GantiPassword8.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTI~12.CLA|GantiPassword$8.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$8.class" SelfReg="false"/>
+    <ROW File="GantiPassword9.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTI~13.CLA|GantiPassword$9.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword$9.class" SelfReg="false"/>
+    <ROW File="GantiPassword.class" Component_="BerhasilTransaksiBeli1.class" FileName="GANTI~14.CLA|GantiPassword.class" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword.class" SelfReg="false"/>
+    <ROW File="GantiPassword.form" Component_="BerhasilTransaksiBeli1.class" FileName="GANTIP~1.FOR|GantiPassword.form" Attributes="0" SourcePath="build\classes\PopUp\GantiPassword.form" SelfReg="false"/>
+    <ROW File="GetDataProduk1.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~1.CLA|GetDataProduk$1.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$1.class" SelfReg="false"/>
+    <ROW File="GetDataProduk2.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~2.CLA|GetDataProduk$2.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$2.class" SelfReg="false"/>
+    <ROW File="GetDataProduk3.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~3.CLA|GetDataProduk$3.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$3.class" SelfReg="false"/>
+    <ROW File="GetDataProduk4.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~4.CLA|GetDataProduk$4.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$4.class" SelfReg="false"/>
+    <ROW File="GetDataProduk5.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~5.CLA|GetDataProduk$5.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$5.class" SelfReg="false"/>
+    <ROW File="GetDataProduk6.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~6.CLA|GetDataProduk$6.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$6.class" SelfReg="false"/>
+    <ROW File="GetDataProduk7.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~7.CLA|GetDataProduk$7.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$7.class" SelfReg="false"/>
+    <ROW File="GetDataProduk81.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~8.CLA|GetDataProduk$8$1.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$8$1.class" SelfReg="false"/>
+    <ROW File="GetDataProduk8.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~9.CLA|GetDataProduk$8.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk$8.class" SelfReg="false"/>
+    <ROW File="GetDataProduk.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~10.CLA|GetDataProduk.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk.class" SelfReg="false"/>
+    <ROW File="GetDataProduk.form" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~1.FOR|GetDataProduk.form" Attributes="0" SourcePath="build\classes\PopUp\GetDataProduk.form" SelfReg="false"/>
+    <ROW File="GetDataSupplier1.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~11.CLA|GetDataSupplier$1.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$1.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier2.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~12.CLA|GetDataSupplier$2.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$2.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier3.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~13.CLA|GetDataSupplier$3.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$3.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier4.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~14.CLA|GetDataSupplier$4.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$4.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier5.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~15.CLA|GetDataSupplier$5.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$5.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier6.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~16.CLA|GetDataSupplier$6.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$6.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier71.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~17.CLA|GetDataSupplier$7$1.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$7$1.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier7.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~18.CLA|GetDataSupplier$7.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier$7.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier.class" Component_="BerhasilTransaksiBeli1.class" FileName="GETDA~19.CLA|GetDataSupplier.class" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier.class" SelfReg="false"/>
+    <ROW File="GetDataSupplier.form" Component_="BerhasilTransaksiBeli1.class" FileName="GETDAT~2.FOR|GetDataSupplier.form" Attributes="0" SourcePath="build\classes\PopUp\GetDataSupplier.form" SelfReg="false"/>
+    <ROW File="LupaPassword1.class_1" Component_="BerhasilTransaksiBeli1.class" FileName="LUPAPA~1.CLA|LupaPassword$1.class" Attributes="0" SourcePath="build\classes\PopUp\LupaPassword$1.class" SelfReg="false"/>
+    <ROW File="LupaPassword2.class_1" Component_="BerhasilTransaksiBeli1.class" FileName="LUPAPA~2.CLA|LupaPassword$2.class" Attributes="0" SourcePath="build\classes\PopUp\LupaPassword$2.class" SelfReg="false"/>
+    <ROW File="LupaPassword31.class" Component_="BerhasilTransaksiBeli1.class" FileName="LUPAPA~3.CLA|LupaPassword$3$1.class" Attributes="0" SourcePath="build\classes\PopUp\LupaPassword$3$1.class" SelfReg="false"/>
+    <ROW File="LupaPassword3.class_1" Component_="BerhasilTransaksiBeli1.class" FileName="LUPAPA~4.CLA|LupaPassword$3.class" Attributes="0" SourcePath="build\classes\PopUp\LupaPassword$3.class" SelfReg="false"/>
+    <ROW File="LupaPassword.class_1" Component_="BerhasilTransaksiBeli1.class" FileName="LUPAPA~5.CLA|LupaPassword.class" Attributes="0" SourcePath="build\classes\PopUp\LupaPassword.class" SelfReg="false"/>
+    <ROW File="LupaPassword.form_1" Component_="BerhasilTransaksiBeli1.class" FileName="LUPAPA~1.FOR|LupaPassword.form" Attributes="0" SourcePath="build\classes\PopUp\LupaPassword.form" SelfReg="false"/>
+    <ROW File="Profile1.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~1.CLA|Profile$1.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$1.class" SelfReg="false"/>
+    <ROW File="Profile2.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~2.CLA|Profile$2.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$2.class" SelfReg="false"/>
+    <ROW File="Profile3.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~3.CLA|Profile$3.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$3.class" SelfReg="false"/>
+    <ROW File="Profile4.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~4.CLA|Profile$4.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$4.class" SelfReg="false"/>
+    <ROW File="Profile51.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~5.CLA|Profile$5$1.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$5$1.class" SelfReg="false"/>
+    <ROW File="Profile5.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~6.CLA|Profile$5.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$5.class" SelfReg="false"/>
+    <ROW File="Profile6.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~7.CLA|Profile$6.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$6.class" SelfReg="false"/>
+    <ROW File="Profile71.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~8.CLA|Profile$7$1.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$7$1.class" SelfReg="false"/>
+    <ROW File="Profile7.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~9.CLA|Profile$7.class" Attributes="0" SourcePath="build\classes\PopUp\Profile$7.class" SelfReg="false"/>
+    <ROW File="Profile.class" Component_="BerhasilTransaksiBeli1.class" FileName="PROFI~10.CLA|Profile.class" Attributes="0" SourcePath="build\classes\PopUp\Profile.class" SelfReg="false"/>
+    <ROW File="Profile.form" Component_="BerhasilTransaksiBeli1.class" FileName="PROFIL~1.FOR|Profile.form" Attributes="0" SourcePath="build\classes\PopUp\Profile.form" SelfReg="false"/>
+    <ROW File="UpdateKaryawan1.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~1.CLA|UpdateKaryawan$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$1.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan2.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~2.CLA|UpdateKaryawan$2.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$2.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan3.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~3.CLA|UpdateKaryawan$3.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$3.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan4.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~4.CLA|UpdateKaryawan$4.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$4.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan5.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~5.CLA|UpdateKaryawan$5.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$5.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan6.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~6.CLA|UpdateKaryawan$6.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$6.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan7.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~7.CLA|UpdateKaryawan$7.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$7.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan8.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~8.CLA|UpdateKaryawan$8.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$8.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan91.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~9.CLA|UpdateKaryawan$9$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$9$1.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan9.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~10.CLA|UpdateKaryawan$9.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan$9.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~11.CLA|UpdateKaryawan.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan.class" SelfReg="false"/>
+    <ROW File="UpdateKaryawan.form" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~1.FOR|UpdateKaryawan.form" Attributes="0" SourcePath="build\classes\PopUp\UpdateKaryawan.form" SelfReg="false"/>
+    <ROW File="UpdateMember1.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~12.CLA|UpdateMember$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$1.class" SelfReg="false"/>
+    <ROW File="UpdateMember2.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~13.CLA|UpdateMember$2.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$2.class" SelfReg="false"/>
+    <ROW File="UpdateMember3.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~14.CLA|UpdateMember$3.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$3.class" SelfReg="false"/>
+    <ROW File="UpdateMember4.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~15.CLA|UpdateMember$4.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$4.class" SelfReg="false"/>
+    <ROW File="UpdateMember51.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~16.CLA|UpdateMember$5$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$5$1.class" SelfReg="false"/>
+    <ROW File="UpdateMember5.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~17.CLA|UpdateMember$5.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$5.class" SelfReg="false"/>
+    <ROW File="UpdateMember61.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~18.CLA|UpdateMember$6$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$6$1.class" SelfReg="false"/>
+    <ROW File="UpdateMember6.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~19.CLA|UpdateMember$6.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember$6.class" SelfReg="false"/>
+    <ROW File="UpdateMember.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~20.CLA|UpdateMember.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember.class" SelfReg="false"/>
+    <ROW File="UpdateMember.form" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~2.FOR|UpdateMember.form" Attributes="0" SourcePath="build\classes\PopUp\UpdateMember.form" SelfReg="false"/>
+    <ROW File="UpdateProduk1.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~21.CLA|UpdateProduk$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk$1.class" SelfReg="false"/>
+    <ROW File="UpdateProduk2.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~22.CLA|UpdateProduk$2.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk$2.class" SelfReg="false"/>
+    <ROW File="UpdateProduk3.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~23.CLA|UpdateProduk$3.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk$3.class" SelfReg="false"/>
+    <ROW File="UpdateProduk41.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~24.CLA|UpdateProduk$4$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk$4$1.class" SelfReg="false"/>
+    <ROW File="UpdateProduk4.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~25.CLA|UpdateProduk$4.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk$4.class" SelfReg="false"/>
+    <ROW File="UpdateProduk51.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~26.CLA|UpdateProduk$5$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk$5$1.class" SelfReg="false"/>
+    <ROW File="UpdateProduk5.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~27.CLA|UpdateProduk$5.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk$5.class" SelfReg="false"/>
+    <ROW File="UpdateProduk.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~28.CLA|UpdateProduk.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk.class" SelfReg="false"/>
+    <ROW File="UpdateProduk.form" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~3.FOR|UpdateProduk.form" Attributes="0" SourcePath="build\classes\PopUp\UpdateProduk.form" SelfReg="false"/>
+    <ROW File="UpdateSupplier1.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~29.CLA|UpdateSupplier$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier$1.class" SelfReg="false"/>
+    <ROW File="UpdateSupplier2.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~30.CLA|UpdateSupplier$2.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier$2.class" SelfReg="false"/>
+    <ROW File="UpdateSupplier3.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~31.CLA|UpdateSupplier$3.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier$3.class" SelfReg="false"/>
+    <ROW File="UpdateSupplier4.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~32.CLA|UpdateSupplier$4.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier$4.class" SelfReg="false"/>
+    <ROW File="UpdateSupplier51.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~33.CLA|UpdateSupplier$5$1.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier$5$1.class" SelfReg="false"/>
+    <ROW File="UpdateSupplier5.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~34.CLA|UpdateSupplier$5.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier$5.class" SelfReg="false"/>
+    <ROW File="UpdateSupplier.class" Component_="BerhasilTransaksiBeli1.class" FileName="UPDAT~35.CLA|UpdateSupplier.class" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier.class" SelfReg="false"/>
+    <ROW File="UpdateSupplier.form" Component_="BerhasilTransaksiBeli1.class" FileName="UPDATE~4.FOR|UpdateSupplier.form" Attributes="0" SourcePath="build\classes\PopUp\UpdateSupplier.form" SelfReg="false"/>
+    <ROW File="build.xml" Component_="applet.policy" FileName="build.xml" Attributes="0" SourcePath="build.xml" SelfReg="false"/>
+    <ROW File="ePayment.jar" Component_="ePayment.jar" FileName="ePayment.jar" Attributes="0" SourcePath="dist\ePayment.jar" SelfReg="false"/>
+    <ROW File="AbsoluteLayout.jar" Component_="AbsoluteLayout.jar" FileName="ABSOLU~1.JAR|AbsoluteLayout.jar" Attributes="0" SourcePath="dist\lib\AbsoluteLayout.jar" SelfReg="false"/>
+    <ROW File="barcode.jar" Component_="AbsoluteLayout.jar" FileName="barcode.jar" Attributes="0" SourcePath="dist\lib\barcode.jar" SelfReg="false"/>
+    <ROW File="commonsbeanutils1.9.0.jar" Component_="AbsoluteLayout.jar" FileName="COMMON~1.JAR|commons-beanutils-1.9.0.jar" Attributes="0" SourcePath="dist\lib\commons-beanutils-1.9.0.jar" SelfReg="false"/>
+    <ROW File="commonscollections2.1.1.jar" Component_="AbsoluteLayout.jar" FileName="COMMON~2.JAR|commons-collections-2.1.1.jar" Attributes="0" SourcePath="dist\lib\commons-collections-2.1.1.jar" SelfReg="false"/>
+    <ROW File="commonsdigester2.1.jar" Component_="AbsoluteLayout.jar" FileName="COMMON~3.JAR|commons-digester-2.1.jar" Attributes="0" SourcePath="dist\lib\commons-digester-2.1.jar" SelfReg="false"/>
+    <ROW File="commonsjavaflow20060411.jar" Component_="AbsoluteLayout.jar" FileName="COMMON~4.JAR|commons-javaflow-20060411.jar" Attributes="0" SourcePath="dist\lib\commons-javaflow-20060411.jar" SelfReg="false"/>
+    <ROW File="commonslogging1.1.1.jar" Component_="AbsoluteLayout.jar" FileName="COMMON~5.JAR|commons-logging-1.1.1.jar" Attributes="0" SourcePath="dist\lib\commons-logging-1.1.1.jar" SelfReg="false"/>
+    <ROW File="groovyall2.0.8.jar" Component_="AbsoluteLayout.jar" FileName="GROOVY~1.JAR|groovy-all-2.0.8.jar" Attributes="0" SourcePath="dist\lib\groovy-all-2.0.8.jar" SelfReg="false"/>
+    <ROW File="jasperreports5.5.0.jar" Component_="AbsoluteLayout.jar" FileName="JASPER~1.JAR|jasperreports-5.5.0.jar" Attributes="0" SourcePath="dist\lib\jasperreports-5.5.0.jar" SelfReg="false"/>
+    <ROW File="jasperreportsfonts5.5.0.jar" Component_="AbsoluteLayout.jar" FileName="JASPER~2.JAR|jasperreports-fonts-5.5.0.jar" Attributes="0" SourcePath="dist\lib\jasperreports-fonts-5.5.0.jar" SelfReg="false"/>
+    <ROW File="JCalendar1.3.3.jar" Component_="AbsoluteLayout.jar" FileName="JCALEN~1.JAR|JCalendar-1.3.3.jar" Attributes="0" SourcePath="dist\lib\JCalendar-1.3.3.jar" SelfReg="false"/>
+    <ROW File="jcommon1.0.24.jar" Component_="AbsoluteLayout.jar" FileName="JCOMMO~1.JAR|jcommon-1.0.24.jar" Attributes="0" SourcePath="dist\lib\jcommon-1.0.24.jar" SelfReg="false"/>
+    <ROW File="jfreechart1.5.0.jar" Component_="AbsoluteLayout.jar" FileName="JFREEC~1.JAR|jfreechart-1.5.0.jar" Attributes="0" SourcePath="dist\lib\jfreechart-1.5.0.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorj8.0.32.jar" Component_="AbsoluteLayout.jar" FileName="MYSQL-~1.JAR|mysql-connector-j-8.0.32.jar" Attributes="0" SourcePath="dist\lib\mysql-connector-j-8.0.32.jar" SelfReg="false"/>
+    <ROW File="servletapi2.5.jar" Component_="AbsoluteLayout.jar" FileName="SERVLE~1.JAR|servlet-api-2.5.jar" Attributes="0" SourcePath="dist\lib\servlet-api-2.5.jar" SelfReg="false"/>
+    <ROW File="README.TXT" Component_="ePayment.jar" FileName="README.TXT" Attributes="0" SourcePath="dist\README.TXT" SelfReg="false"/>
+    <ROW File="manifest.mf" Component_="applet.policy" FileName="manifest.mf" Attributes="0" SourcePath="manifest.mf" SelfReg="false"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="BUILD-~1.XML|build-impl.xml" Attributes="0" SourcePath="nbproject\build-impl.xml" SelfReg="false"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="GENFIL~1.PRO|genfiles.properties" Attributes="0" SourcePath="nbproject\genfiles.properties" SelfReg="false"/>
+    <ROW File="config.properties" Component_="config.properties" FileName="CONFIG~1.PRO|config.properties" Attributes="0" SourcePath="nbproject\private\config.properties" SelfReg="false"/>
+    <ROW File="private.properties" Component_="config.properties" FileName="PRIVAT~1.PRO|private.properties" Attributes="0" SourcePath="nbproject\private\private.properties" SelfReg="false"/>
+    <ROW File="private.xml" Component_="config.properties" FileName="private.xml" Attributes="0" SourcePath="nbproject\private\private.xml" SelfReg="false"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="PROJEC~1.PRO|project.properties" Attributes="0" SourcePath="nbproject\project.properties" SelfReg="false"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Attributes="0" SourcePath="nbproject\project.xml" SelfReg="false"/>
+    <ROW File="BASRENG0001.png_1" Component_="BASRENG0001.png_1" FileName="1111-B~1.PNG|1111-BASRENG-0001.png" Attributes="0" SourcePath="src\Barcode\1111-BASRENG-0001.png" SelfReg="false"/>
+    <ROW File="BASRENG0002.png_1" Component_="BASRENG0001.png_1" FileName="1111-B~2.PNG|1111-BASRENG-0002.png" Attributes="0" SourcePath="src\Barcode\1111-BASRENG-0002.png" SelfReg="false"/>
+    <ROW File="BASRENG0003.png_1" Component_="BASRENG0001.png_1" FileName="1111-B~3.PNG|1111-BASRENG-0003.png" Attributes="0" SourcePath="src\Barcode\1111-BASRENG-0003.png" SelfReg="false"/>
+    <ROW File="Nota.jasper_1" Component_="Nota.jasper_1" FileName="NOTA~1.JAS|Nota.jasper" Attributes="0" SourcePath="src\Cetak\Nota.jasper" SelfReg="false"/>
+    <ROW File="Nota.jrxml_1" Component_="Nota.jasper_1" FileName="NOTA~1.JRX|Nota.jrxml" Attributes="0" SourcePath="src\Cetak\Nota.jrxml" SelfReg="false"/>
+    <ROW File="Notaaaaa.jasper_1" Component_="Nota.jasper_1" FileName="NOTAAA~1.JAS|Notaaaaa.jasper" Attributes="0" SourcePath="src\Cetak\Notaaaaa.jasper" SelfReg="false"/>
+    <ROW File="Notaaaaa.jrxml_1" Component_="Nota.jasper_1" FileName="NOTAAA~1.JRX|Notaaaaa.jrxml" Attributes="0" SourcePath="src\Cetak\Notaaaaa.jrxml" SelfReg="false"/>
+    <ROW File="NotaBeli.jasper_1" Component_="Nota.jasper_1" FileName="NOTABE~1.JAS|NotaBeli.jasper" Attributes="0" SourcePath="src\Cetak\NotaBeli.jasper" SelfReg="false"/>
+    <ROW File="NotaBeli.jrxml_1" Component_="Nota.jasper_1" FileName="NOTABE~1.JRX|NotaBeli.jrxml" Attributes="0" SourcePath="src\Cetak\NotaBeli.jrxml" SelfReg="false"/>
+    <ROW File="Login.form_1" Component_="Login.form" FileName="LOGIN~1.FOR|Login.form" Attributes="0" SourcePath="src\Frame\Login.form" SelfReg="false"/>
+    <ROW File="Login.java" Component_="Login.form" FileName="LOGIN~1.JAV|Login.java" Attributes="0" SourcePath="src\Frame\Login.java" SelfReg="false"/>
+    <ROW File="LoginWithRFID.form_1" Component_="Login.form" FileName="LOGINW~1.FOR|LoginWithRFID.form" Attributes="0" SourcePath="src\Frame\LoginWithRFID.form" SelfReg="false"/>
+    <ROW File="LoginWithRFID.java" Component_="Login.form" FileName="LOGINW~1.JAV|LoginWithRFID.java" Attributes="0" SourcePath="src\Frame\LoginWithRFID.java" SelfReg="false"/>
+    <ROW File="LupaPassword.form_2" Component_="Login.form" FileName="LUPAPA~1.FOR|LupaPassword.form" Attributes="0" SourcePath="src\Frame\LupaPassword.form" SelfReg="false"/>
+    <ROW File="LupaPassword.java" Component_="Login.form" FileName="LUPAPA~1.JAV|LupaPassword.java" Attributes="0" SourcePath="src\Frame\LupaPassword.java" SelfReg="false"/>
+    <ROW File="ProgressBar.form_1" Component_="Login.form" FileName="PROGRE~1.FOR|ProgressBar.form" Attributes="0" SourcePath="src\Frame\ProgressBar.form" SelfReg="false"/>
+    <ROW File="ProgressBar.java" Component_="Login.form" FileName="PROGRE~1.JAV|ProgressBar.java" Attributes="0" SourcePath="src\Frame\ProgressBar.java" SelfReg="false"/>
+    <ROW File="Dashboard.png_2" Component_="Dashboard.png_1" FileName="01DASH~1.PNG|01Dashboard.png" Attributes="0" SourcePath="src\Image\01Dashboard.png" SelfReg="false"/>
+    <ROW File="Dashboard.png_3" Component_="Dashboard.png_1" FileName="02DASH~1.PNG|02Dashboard.png" Attributes="0" SourcePath="src\Image\02Dashboard.png" SelfReg="false"/>
+    <ROW File="BerhasilExport.png_1" Component_="Dashboard.png_1" FileName="BERHAS~1.PNG|BerhasilExport.png" Attributes="0" SourcePath="src\Image\BerhasilExport.png" SelfReg="false"/>
+    <ROW File="berhasilGanti.png_1" Component_="Dashboard.png_1" FileName="BERHAS~2.PNG|berhasilGanti.png" Attributes="0" SourcePath="src\Image\berhasilGanti.png" SelfReg="false"/>
+    <ROW File="berhasilLogin.png_1" Component_="Dashboard.png_1" FileName="BERHAS~3.PNG|berhasilLogin.png" Attributes="0" SourcePath="src\Image\berhasilLogin.png" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli.png_1" Component_="Dashboard.png_1" FileName="BERHAS~4.PNG|BerhasilTransaksiBeli.png" Attributes="0" SourcePath="src\Image\BerhasilTransaksiBeli.png" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual.png_1" Component_="Dashboard.png_1" FileName="BERHAS~5.PNG|BerhasilTransaksiJual.png" Attributes="0" SourcePath="src\Image\BerhasilTransaksiJual.png" SelfReg="false"/>
+    <ROW File="bukanMember.png_1" Component_="Dashboard.png_1" FileName="BUKANM~1.PNG|bukanMember.png" Attributes="0" SourcePath="src\Image\bukanMember.png" SelfReg="false"/>
+    <ROW File="Cari.png_1" Component_="Dashboard.png_1" FileName="Cari.png" Attributes="0" SourcePath="src\Image\Cari.png" SelfReg="false"/>
+    <ROW File="dataKaryawan.png_1" Component_="Dashboard.png_1" FileName="DATAKA~1.PNG|dataKaryawan.png" Attributes="0" SourcePath="src\Image\dataKaryawan.png" SelfReg="false"/>
+    <ROW File="dataMember.png_1" Component_="Dashboard.png_1" FileName="DATAME~1.PNG|dataMember.png" Attributes="0" SourcePath="src\Image\dataMember.png" SelfReg="false"/>
+    <ROW File="dataProduk.png_1" Component_="Dashboard.png_1" FileName="DATAPR~1.PNG|dataProduk.png" Attributes="0" SourcePath="src\Image\dataProduk.png" SelfReg="false"/>
+    <ROW File="dataSupplier.png_1" Component_="Dashboard.png_1" FileName="DATASU~1.PNG|dataSupplier.png" Attributes="0" SourcePath="src\Image\dataSupplier.png" SelfReg="false"/>
+    <ROW File="editData.png_1" Component_="Dashboard.png_1" FileName="editData.png" Attributes="0" SourcePath="src\Image\editData.png" SelfReg="false"/>
+    <ROW File="gagalEdit.png_1" Component_="Dashboard.png_1" FileName="GAGALE~1.PNG|gagalEdit.png" Attributes="0" SourcePath="src\Image\gagalEdit.png" SelfReg="false"/>
+    <ROW File="gagalHapus.png_1" Component_="Dashboard.png_1" FileName="GAGALH~1.PNG|gagalHapus.png" Attributes="0" SourcePath="src\Image\gagalHapus.png" SelfReg="false"/>
+    <ROW File="gagalLogin.png_1" Component_="Dashboard.png_1" FileName="GAGALL~1.PNG|gagalLogin.png" Attributes="0" SourcePath="src\Image\gagalLogin.png" SelfReg="false"/>
+    <ROW File="gagalTambah.png_1" Component_="Dashboard.png_1" FileName="GAGALT~1.PNG|gagalTambah.png" Attributes="0" SourcePath="src\Image\gagalTambah.png" SelfReg="false"/>
+    <ROW File="gantiPassword.png_1" Component_="Dashboard.png_1" FileName="GANTIP~1.PNG|gantiPassword.png" Attributes="0" SourcePath="src\Image\gantiPassword.png" SelfReg="false"/>
+    <ROW File="hapusData.png_1" Component_="Dashboard.png_1" FileName="HAPUSD~1.PNG|hapusData.png" Attributes="0" SourcePath="src\Image\hapusData.png" SelfReg="false"/>
+    <ROW File="hapusOwner.png_1" Component_="Dashboard.png_1" FileName="HAPUSO~1.PNG|hapusOwner.png" Attributes="0" SourcePath="src\Image\hapusOwner.png" SelfReg="false"/>
+    <ROW File="harap.png_1" Component_="Dashboard.png_1" FileName="harap.png" Attributes="0" SourcePath="src\Image\harap.png" SelfReg="false"/>
+    <ROW File="Ic_Hidden.png_1" Component_="Dashboard.png_1" FileName="IC_HID~1.PNG|Ic_Hidden.png" Attributes="0" SourcePath="src\Image\Ic_Hidden.png" SelfReg="false"/>
+    <ROW File="Ic_Show.png_1" Component_="Dashboard.png_1" FileName="Ic_Show.png" Attributes="0" SourcePath="src\Image\Ic_Show.png" SelfReg="false"/>
+    <ROW File="IsiJumlah.png_1" Component_="Dashboard.png_1" FileName="ISIJUM~1.PNG|IsiJumlah.png" Attributes="0" SourcePath="src\Image\IsiJumlah.png" SelfReg="false"/>
+    <ROW File="IsiTunai.png_1" Component_="Dashboard.png_1" FileName="IsiTunai.png" Attributes="0" SourcePath="src\Image\IsiTunai.png" SelfReg="false"/>
+    <ROW File="keluar.png_1" Component_="Dashboard.png_1" FileName="keluar.png" Attributes="0" SourcePath="src\Image\keluar.png" SelfReg="false"/>
+    <ROW File="konfirmasiPass.png_1" Component_="Dashboard.png_1" FileName="KONFIR~1.PNG|konfirmasiPass.png" Attributes="0" SourcePath="src\Image\konfirmasiPass.png" SelfReg="false"/>
+    <ROW File="laporanPendapatanB.png_1" Component_="Dashboard.png_1" FileName="LAPORA~1.PNG|laporanPendapatanB.png" Attributes="0" SourcePath="src\Image\laporanPendapatanB.png" SelfReg="false"/>
+    <ROW File="laporanPendapatanH.png_1" Component_="Dashboard.png_1" FileName="LAPORA~2.PNG|laporanPendapatanH.png" Attributes="0" SourcePath="src\Image\laporanPendapatanH.png" SelfReg="false"/>
+    <ROW File="laporanPendapatanM.png_1" Component_="Dashboard.png_1" FileName="LAPORA~3.PNG|laporanPendapatanM.png" Attributes="0" SourcePath="src\Image\laporanPendapatanM.png" SelfReg="false"/>
+    <ROW File="laporanPengeluaranB.png_1" Component_="Dashboard.png_1" FileName="LAPORA~4.PNG|laporanPengeluaranB.png" Attributes="0" SourcePath="src\Image\laporanPengeluaranB.png" SelfReg="false"/>
+    <ROW File="laporanPengeluaranH.png_1" Component_="Dashboard.png_1" FileName="LAPORA~5.PNG|laporanPengeluaranH.png" Attributes="0" SourcePath="src\Image\laporanPengeluaranH.png" SelfReg="false"/>
+    <ROW File="laporanPengeluaranM.png_1" Component_="Dashboard.png_1" FileName="LAPORA~6.PNG|laporanPengeluaranM.png" Attributes="0" SourcePath="src\Image\laporanPengeluaranM.png" SelfReg="false"/>
+    <ROW File="login.png_1" Component_="Dashboard.png_1" FileName="login.png" Attributes="0" SourcePath="src\Image\login.png" SelfReg="false"/>
+    <ROW File="loginRFID.png_1" Component_="Dashboard.png_1" FileName="LOGINR~1.PNG|loginRFID.png" Attributes="0" SourcePath="src\Image\loginRFID.png" SelfReg="false"/>
+    <ROW File="Login_1.png_1" Component_="Dashboard.png_1" FileName="Login_1.png" Attributes="0" SourcePath="src\Image\Login_1.png" SelfReg="false"/>
+    <ROW File="LogoAplikasi.png_1" Component_="Dashboard.png_1" FileName="LOGOAP~1.PNG|LogoAplikasi.png" Attributes="0" SourcePath="src\Image\LogoAplikasi.png" SelfReg="false"/>
+    <ROW File="lupaPassword.png_1" Component_="Dashboard.png_1" FileName="LUPAPA~1.PNG|lupaPassword.png" Attributes="0" SourcePath="src\Image\lupaPassword.png" SelfReg="false"/>
+    <ROW File="menuOwner.png_1" Component_="Dashboard.png_1" FileName="MENUOW~1.PNG|menuOwner.png" Attributes="0" SourcePath="src\Image\menuOwner.png" SelfReg="false"/>
+    <ROW File="menuTransaksi.png_1" Component_="Dashboard.png_1" FileName="MENUTR~1.PNG|menuTransaksi.png" Attributes="0" SourcePath="src\Image\menuTransaksi.png" SelfReg="false"/>
+    <ROW File="PembayaranKurang.png_1" Component_="Dashboard.png_1" FileName="PEMBAY~1.PNG|PembayaranKurang.png" Attributes="0" SourcePath="src\Image\PembayaranKurang.png" SelfReg="false"/>
+    <ROW File="PilihData.png_1" Component_="Dashboard.png_1" FileName="PILIHD~1.PNG|PilihData.png" Attributes="0" SourcePath="src\Image\PilihData.png" SelfReg="false"/>
+    <ROW File="PilihTanggal.png_1" Component_="Dashboard.png_1" FileName="PILIHT~1.PNG|PilihTanggal.png" Attributes="0" SourcePath="src\Image\PilihTanggal.png" SelfReg="false"/>
+    <ROW File="popupDataKaryawan.png_1" Component_="Dashboard.png_1" FileName="POPUPD~1.PNG|popupDataKaryawan.png" Attributes="0" SourcePath="src\Image\popupDataKaryawan.png" SelfReg="false"/>
+    <ROW File="popupDataMember.png_1" Component_="Dashboard.png_1" FileName="POPUPD~2.PNG|popupDataMember.png" Attributes="0" SourcePath="src\Image\popupDataMember.png" SelfReg="false"/>
+    <ROW File="popupDataProduk.png_1" Component_="Dashboard.png_1" FileName="POPUPD~3.PNG|popupDataProduk.png" Attributes="0" SourcePath="src\Image\popupDataProduk.png" SelfReg="false"/>
+    <ROW File="popupDataSuppplier.png_1" Component_="Dashboard.png_1" FileName="POPUPD~4.PNG|popupDataSuppplier.png" Attributes="0" SourcePath="src\Image\popupDataSuppplier.png" SelfReg="false"/>
+    <ROW File="popupLaporan.png_1" Component_="Dashboard.png_1" FileName="POPUPL~1.PNG|popupLaporan.png" Attributes="0" SourcePath="src\Image\popupLaporan.png" SelfReg="false"/>
+    <ROW File="popupProduk.png_1" Component_="Dashboard.png_1" FileName="POPUPP~1.PNG|popupProduk.png" Attributes="0" SourcePath="src\Image\popupProduk.png" SelfReg="false"/>
+    <ROW File="popupSupplier.png_1" Component_="Dashboard.png_1" FileName="POPUPS~1.PNG|popupSupplier.png" Attributes="0" SourcePath="src\Image\popupSupplier.png" SelfReg="false"/>
+    <ROW File="produk.png_1" Component_="Dashboard.png_1" FileName="produk.png" Attributes="0" SourcePath="src\Image\produk.png" SelfReg="false"/>
+    <ROW File="profile.png_1" Component_="Dashboard.png_1" FileName="profile.png" Attributes="0" SourcePath="src\Image\profile.png" SelfReg="false"/>
+    <ROW File="progressBar.png_1" Component_="Dashboard.png_1" FileName="PROGRE~1.PNG|progressBar.png" Attributes="0" SourcePath="src\Image\progressBar.png" SelfReg="false"/>
+    <ROW File="stokHabis.png_1" Component_="Dashboard.png_1" FileName="STOKHA~1.PNG|stokHabis.png" Attributes="0" SourcePath="src\Image\stokHabis.png" SelfReg="false"/>
+    <ROW File="stokKurang.png_1" Component_="Dashboard.png_1" FileName="STOKKU~1.PNG|stokKurang.png" Attributes="0" SourcePath="src\Image\stokKurang.png" SelfReg="false"/>
+    <ROW File="supplier.png_1" Component_="Dashboard.png_1" FileName="supplier.png" Attributes="0" SourcePath="src\Image\supplier.png" SelfReg="false"/>
+    <ROW File="TabelKosong.png_1" Component_="Dashboard.png_1" FileName="TABELK~1.PNG|TabelKosong.png" Attributes="0" SourcePath="src\Image\TabelKosong.png" SelfReg="false"/>
+    <ROW File="tambahData.png_1" Component_="Dashboard.png_1" FileName="TAMBAH~1.PNG|tambahData.png" Attributes="0" SourcePath="src\Image\tambahData.png" SelfReg="false"/>
+    <ROW File="tanyaHapus.png_1" Component_="Dashboard.png_1" FileName="TANYAH~1.PNG|tanyaHapus.png" Attributes="0" SourcePath="src\Image\tanyaHapus.png" SelfReg="false"/>
+    <ROW File="transaksiBeliBaru.png_1" Component_="Dashboard.png_1" FileName="TRANSA~1.PNG|transaksiBeliBaru.png" Attributes="0" SourcePath="src\Image\transaksiBeliBaru.png" SelfReg="false"/>
+    <ROW File="TransaksiBeli_1.png_1" Component_="Dashboard.png_1" FileName="TRANSA~2.PNG|TransaksiBeli_1.png" Attributes="0" SourcePath="src\Image\TransaksiBeli_1.png" SelfReg="false"/>
+    <ROW File="TransaksiJual.png_1" Component_="Dashboard.png_1" FileName="TRANSA~3.PNG|TransaksiJual.png" Attributes="0" SourcePath="src\Image\TransaksiJual.png" SelfReg="false"/>
+    <ROW File="BerhasilEditData.form_1" Component_="BerhasilEditData.form" FileName="BERHAS~1.FOR|BerhasilEditData.form" Attributes="0" SourcePath="src\Informasi\BerhasilEditData.form" SelfReg="false"/>
+    <ROW File="BerhasilEditData.java" Component_="BerhasilEditData.form" FileName="BERHAS~1.JAV|BerhasilEditData.java" Attributes="0" SourcePath="src\Informasi\BerhasilEditData.java" SelfReg="false"/>
+    <ROW File="BerhasilExport.form_1" Component_="BerhasilEditData.form" FileName="BERHAS~2.FOR|BerhasilExport.form" Attributes="0" SourcePath="src\Informasi\BerhasilExport.form" SelfReg="false"/>
+    <ROW File="BerhasilExport.java" Component_="BerhasilEditData.form" FileName="BERHAS~2.JAV|BerhasilExport.java" Attributes="0" SourcePath="src\Informasi\BerhasilExport.java" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword.form_1" Component_="BerhasilEditData.form" FileName="BERHAS~3.FOR|BerhasilGantiPassword.form" Attributes="0" SourcePath="src\Informasi\BerhasilGantiPassword.form" SelfReg="false"/>
+    <ROW File="BerhasilGantiPassword.java" Component_="BerhasilEditData.form" FileName="BERHAS~3.JAV|BerhasilGantiPassword.java" Attributes="0" SourcePath="src\Informasi\BerhasilGantiPassword.java" SelfReg="false"/>
+    <ROW File="BerhasilHapusData.form_1" Component_="BerhasilEditData.form" FileName="BERHAS~4.FOR|BerhasilHapusData.form" Attributes="0" SourcePath="src\Informasi\BerhasilHapusData.form" SelfReg="false"/>
+    <ROW File="BerhasilHapusData.java" Component_="BerhasilEditData.form" FileName="BERHAS~4.JAV|BerhasilHapusData.java" Attributes="0" SourcePath="src\Informasi\BerhasilHapusData.java" SelfReg="false"/>
+    <ROW File="BerhasilLogin.form_1" Component_="BerhasilEditData.form" FileName="BERHAS~5.FOR|BerhasilLogin.form" Attributes="0" SourcePath="src\Informasi\BerhasilLogin.form" SelfReg="false"/>
+    <ROW File="BerhasilLogin.java" Component_="BerhasilEditData.form" FileName="BERHAS~5.JAV|BerhasilLogin.java" Attributes="0" SourcePath="src\Informasi\BerhasilLogin.java" SelfReg="false"/>
+    <ROW File="BerhasilTambahData.form_1" Component_="BerhasilEditData.form" FileName="BERHAS~6.FOR|BerhasilTambahData.form" Attributes="0" SourcePath="src\Informasi\BerhasilTambahData.form" SelfReg="false"/>
+    <ROW File="BerhasilTambahData.java" Component_="BerhasilEditData.form" FileName="BERHAS~6.JAV|BerhasilTambahData.java" Attributes="0" SourcePath="src\Informasi\BerhasilTambahData.java" SelfReg="false"/>
+    <ROW File="BukanMember.form_1" Component_="BerhasilEditData.form" FileName="BUKANM~1.FOR|BukanMember.form" Attributes="0" SourcePath="src\Informasi\BukanMember.form" SelfReg="false"/>
+    <ROW File="BukanMember.java" Component_="BerhasilEditData.form" FileName="BUKANM~1.JAV|BukanMember.java" Attributes="0" SourcePath="src\Informasi\BukanMember.java" SelfReg="false"/>
+    <ROW File="GagalEditData.form_1" Component_="BerhasilEditData.form" FileName="GAGALE~1.FOR|GagalEditData.form" Attributes="0" SourcePath="src\Informasi\GagalEditData.form" SelfReg="false"/>
+    <ROW File="GagalEditData.java" Component_="BerhasilEditData.form" FileName="GAGALE~1.JAV|GagalEditData.java" Attributes="0" SourcePath="src\Informasi\GagalEditData.java" SelfReg="false"/>
+    <ROW File="GagalHapusData.form_1" Component_="BerhasilEditData.form" FileName="GAGALH~1.FOR|GagalHapusData.form" Attributes="0" SourcePath="src\Informasi\GagalHapusData.form" SelfReg="false"/>
+    <ROW File="GagalHapusData.java" Component_="BerhasilEditData.form" FileName="GAGALH~1.JAV|GagalHapusData.java" Attributes="0" SourcePath="src\Informasi\GagalHapusData.java" SelfReg="false"/>
+    <ROW File="GagalLogin.form_1" Component_="BerhasilEditData.form" FileName="GAGALL~1.FOR|GagalLogin.form" Attributes="0" SourcePath="src\Informasi\GagalLogin.form" SelfReg="false"/>
+    <ROW File="GagalLogin.java" Component_="BerhasilEditData.form" FileName="GAGALL~1.JAV|GagalLogin.java" Attributes="0" SourcePath="src\Informasi\GagalLogin.java" SelfReg="false"/>
+    <ROW File="GagalTambahData.form_1" Component_="BerhasilEditData.form" FileName="GAGALT~1.FOR|GagalTambahData.form" Attributes="0" SourcePath="src\Informasi\GagalTambahData.form" SelfReg="false"/>
+    <ROW File="GagalTambahData.java" Component_="BerhasilEditData.form" FileName="GAGALT~1.JAV|GagalTambahData.java" Attributes="0" SourcePath="src\Informasi\GagalTambahData.java" SelfReg="false"/>
+    <ROW File="HapusOwner.form_1" Component_="BerhasilEditData.form" FileName="HAPUSO~1.FOR|HapusOwner.form" Attributes="0" SourcePath="src\Informasi\HapusOwner.form" SelfReg="false"/>
+    <ROW File="HapusOwner.java" Component_="BerhasilEditData.form" FileName="HAPUSO~1.JAV|HapusOwner.java" Attributes="0" SourcePath="src\Informasi\HapusOwner.java" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua.form_1" Component_="BerhasilEditData.form" FileName="HARAPD~1.FOR|HarapDiisiSemua.form" Attributes="0" SourcePath="src\Informasi\HarapDiisiSemua.form" SelfReg="false"/>
+    <ROW File="HarapDiisiSemua.java" Component_="BerhasilEditData.form" FileName="HARAPD~1.JAV|HarapDiisiSemua.java" Attributes="0" SourcePath="src\Informasi\HarapDiisiSemua.java" SelfReg="false"/>
+    <ROW File="InginHapusData.form_1" Component_="BerhasilEditData.form" FileName="INGINH~1.FOR|InginHapusData.form" Attributes="0" SourcePath="src\Informasi\InginHapusData.form" SelfReg="false"/>
+    <ROW File="InginHapusData.java" Component_="BerhasilEditData.form" FileName="INGINH~1.JAV|InginHapusData.java" Attributes="0" SourcePath="src\Informasi\InginHapusData.java" SelfReg="false"/>
+    <ROW File="InginKeluar.form_1" Component_="BerhasilEditData.form" FileName="INGINK~1.FOR|InginKeluar.form" Attributes="0" SourcePath="src\Informasi\InginKeluar.form" SelfReg="false"/>
+    <ROW File="InginKeluar.java" Component_="BerhasilEditData.form" FileName="INGINK~1.JAV|InginKeluar.java" Attributes="0" SourcePath="src\Informasi\InginKeluar.java" SelfReg="false"/>
+    <ROW File="IsiJumlah.form_1" Component_="BerhasilEditData.form" FileName="ISIJUM~1.FOR|IsiJumlah.form" Attributes="0" SourcePath="src\Informasi\IsiJumlah.form" SelfReg="false"/>
+    <ROW File="IsiJumlah.java" Component_="BerhasilEditData.form" FileName="ISIJUM~1.JAV|IsiJumlah.java" Attributes="0" SourcePath="src\Informasi\IsiJumlah.java" SelfReg="false"/>
+    <ROW File="IsiTunai.form_1" Component_="BerhasilEditData.form" FileName="ISITUN~1.FOR|IsiTunai.form" Attributes="0" SourcePath="src\Informasi\IsiTunai.form" SelfReg="false"/>
+    <ROW File="IsiTunai.java" Component_="BerhasilEditData.form" FileName="ISITUN~1.JAV|IsiTunai.java" Attributes="0" SourcePath="src\Informasi\IsiTunai.java" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword.form_1" Component_="BerhasilEditData.form" FileName="KONFIR~1.FOR|KonfirmasiPassword.form" Attributes="0" SourcePath="src\Informasi\KonfirmasiPassword.form" SelfReg="false"/>
+    <ROW File="KonfirmasiPassword.java" Component_="BerhasilEditData.form" FileName="KONFIR~1.JAV|KonfirmasiPassword.java" Attributes="0" SourcePath="src\Informasi\KonfirmasiPassword.java" SelfReg="false"/>
+    <ROW File="PembayaranKurang.form_1" Component_="BerhasilEditData.form" FileName="PEMBAY~1.FOR|PembayaranKurang.form" Attributes="0" SourcePath="src\Informasi\PembayaranKurang.form" SelfReg="false"/>
+    <ROW File="PembayaranKurang.java" Component_="BerhasilEditData.form" FileName="PEMBAY~1.JAV|PembayaranKurang.java" Attributes="0" SourcePath="src\Informasi\PembayaranKurang.java" SelfReg="false"/>
+    <ROW File="PilihData.form_1" Component_="BerhasilEditData.form" FileName="PILIHD~1.FOR|PilihData.form" Attributes="0" SourcePath="src\Informasi\PilihData.form" SelfReg="false"/>
+    <ROW File="PilihData.java" Component_="BerhasilEditData.form" FileName="PILIHD~1.JAV|PilihData.java" Attributes="0" SourcePath="src\Informasi\PilihData.java" SelfReg="false"/>
+    <ROW File="PilihTanggal.form_1" Component_="BerhasilEditData.form" FileName="PILIHT~1.FOR|PilihTanggal.form" Attributes="0" SourcePath="src\Informasi\PilihTanggal.form" SelfReg="false"/>
+    <ROW File="PilihTanggal.java" Component_="BerhasilEditData.form" FileName="PILIHT~1.JAV|PilihTanggal.java" Attributes="0" SourcePath="src\Informasi\PilihTanggal.java" SelfReg="false"/>
+    <ROW File="ProdukHabis.form_1" Component_="BerhasilEditData.form" FileName="PRODUK~1.FOR|ProdukHabis.form" Attributes="0" SourcePath="src\Informasi\ProdukHabis.form" SelfReg="false"/>
+    <ROW File="ProdukHabis.java" Component_="BerhasilEditData.form" FileName="PRODUK~1.JAV|ProdukHabis.java" Attributes="0" SourcePath="src\Informasi\ProdukHabis.java" SelfReg="false"/>
+    <ROW File="StokKurang.form_1" Component_="BerhasilEditData.form" FileName="STOKKU~1.FOR|StokKurang.form" Attributes="0" SourcePath="src\Informasi\StokKurang.form" SelfReg="false"/>
+    <ROW File="StokKurang.java" Component_="BerhasilEditData.form" FileName="STOKKU~1.JAV|StokKurang.java" Attributes="0" SourcePath="src\Informasi\StokKurang.java" SelfReg="false"/>
+    <ROW File="TabelKosong.form_1" Component_="BerhasilEditData.form" FileName="TABELK~1.FOR|TabelKosong.form" Attributes="0" SourcePath="src\Informasi\TabelKosong.form" SelfReg="false"/>
+    <ROW File="TabelKosong.java" Component_="BerhasilEditData.form" FileName="TABELK~1.JAV|TabelKosong.java" Attributes="0" SourcePath="src\Informasi\TabelKosong.java" SelfReg="false"/>
+    <ROW File="DashboardKaryawan.form_1" Component_="DashboardKaryawan.form" FileName="DASHBO~1.FOR|DashboardKaryawan.form" Attributes="0" SourcePath="src\Karyawan\DashboardKaryawan.form" SelfReg="false"/>
+    <ROW File="DashboardKaryawan.java" Component_="DashboardKaryawan.form" FileName="DASHBO~1.JAV|DashboardKaryawan.java" Attributes="0" SourcePath="src\Karyawan\DashboardKaryawan.java" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier.form_1" Component_="DashboardKaryawan.form" FileName="MENGHU~1.FOR|MenghubungiSupplier.form" Attributes="0" SourcePath="src\Karyawan\MenghubungiSupplier.form" SelfReg="false"/>
+    <ROW File="MenghubungiSupplier.java" Component_="DashboardKaryawan.form" FileName="MENGHU~1.JAV|MenghubungiSupplier.java" Attributes="0" SourcePath="src\Karyawan\MenghubungiSupplier.java" SelfReg="false"/>
+    <ROW File="MenuTransaksi.form_1" Component_="DashboardKaryawan.form" FileName="MENUTR~1.FOR|MenuTransaksi.form" Attributes="0" SourcePath="src\Karyawan\MenuTransaksi.form" SelfReg="false"/>
+    <ROW File="MenuTransaksi.java" Component_="DashboardKaryawan.form" FileName="MENUTR~1.JAV|MenuTransaksi.java" Attributes="0" SourcePath="src\Karyawan\MenuTransaksi.java" SelfReg="false"/>
+    <ROW File="StokProduk.form_1" Component_="DashboardKaryawan.form" FileName="STOKPR~1.FOR|StokProduk.form" Attributes="0" SourcePath="src\Karyawan\StokProduk.form" SelfReg="false"/>
+    <ROW File="StokProduk.java" Component_="DashboardKaryawan.form" FileName="STOKPR~1.JAV|StokProduk.java" Attributes="0" SourcePath="src\Karyawan\StokProduk.java" SelfReg="false"/>
+    <ROW File="TransaksiBeli.form_1" Component_="DashboardKaryawan.form" FileName="TRANSA~1.FOR|TransaksiBeli.form" Attributes="0" SourcePath="src\Karyawan\TransaksiBeli.form" SelfReg="false"/>
+    <ROW File="TransaksiBeli.java" Component_="DashboardKaryawan.form" FileName="TRANSA~1.JAV|TransaksiBeli.java" Attributes="0" SourcePath="src\Karyawan\TransaksiBeli.java" SelfReg="false"/>
+    <ROW File="TransaksiJual.form_1" Component_="DashboardKaryawan.form" FileName="TRANSA~2.FOR|TransaksiJual.form" Attributes="0" SourcePath="src\Karyawan\TransaksiJual.form" SelfReg="false"/>
+    <ROW File="TransaksiJual.java" Component_="DashboardKaryawan.form" FileName="TRANSA~2.JAV|TransaksiJual.java" Attributes="0" SourcePath="src\Karyawan\TransaksiJual.java" SelfReg="false"/>
+    <ROW File="BarChartPendapatan.java" Component_="BarChartPendapatan.java" FileName="BARCHA~1.JAV|BarChartPendapatan.java" Attributes="0" SourcePath="src\Main\BarChartPendapatan.java" SelfReg="false"/>
+    <ROW File="BarChartPengeluaran.java" Component_="BarChartPendapatan.java" FileName="BARCHA~2.JAV|BarChartPengeluaran.java" Attributes="0" SourcePath="src\Main\BarChartPengeluaran.java" SelfReg="false"/>
+    <ROW File="BarChartProduk.java" Component_="BarChartPendapatan.java" FileName="BARCHA~3.JAV|BarChartProduk.java" Attributes="0" SourcePath="src\Main\BarChartProduk.java" SelfReg="false"/>
+    <ROW File="Koneksi.java" Component_="BarChartPendapatan.java" FileName="KONEKS~1.JAV|Koneksi.java" Attributes="0" SourcePath="src\Main\Koneksi.java" SelfReg="false"/>
+    <ROW File="Rupiah.java" Component_="BarChartPendapatan.java" FileName="RUPIAH~1.JAV|Rupiah.java" Attributes="0" SourcePath="src\Main\Rupiah.java" SelfReg="false"/>
+    <ROW File="TestEnter.java" Component_="BarChartPendapatan.java" FileName="TESTEN~1.JAV|TestEnter.java" Attributes="0" SourcePath="src\Main\TestEnter.java" SelfReg="false"/>
+    <ROW File="Waktu.java" Component_="BarChartPendapatan.java" FileName="WAKTU~1.JAV|Waktu.java" Attributes="0" SourcePath="src\Main\Waktu.java" SelfReg="false"/>
+    <ROW File="DashboardOwner.form_1" Component_="DashboardOwner.form" FileName="DASHBO~1.FOR|DashboardOwner.form" Attributes="0" SourcePath="src\Owner\DashboardOwner.form" SelfReg="false"/>
+    <ROW File="DashboardOwner.java" Component_="DashboardOwner.form" FileName="DASHBO~1.JAV|DashboardOwner.java" Attributes="0" SourcePath="src\Owner\DashboardOwner.java" SelfReg="false"/>
+    <ROW File="DataKaryawan.form_1" Component_="DashboardOwner.form" FileName="DATAKA~1.FOR|DataKaryawan.form" Attributes="0" SourcePath="src\Owner\DataKaryawan.form" SelfReg="false"/>
+    <ROW File="DataKaryawan.java" Component_="DashboardOwner.form" FileName="DATAKA~1.JAV|DataKaryawan.java" Attributes="0" SourcePath="src\Owner\DataKaryawan.java" SelfReg="false"/>
+    <ROW File="DataMember.form_1" Component_="DashboardOwner.form" FileName="DATAME~1.FOR|DataMember.form" Attributes="0" SourcePath="src\Owner\DataMember.form" SelfReg="false"/>
+    <ROW File="DataMember.java" Component_="DashboardOwner.form" FileName="DATAME~1.JAV|DataMember.java" Attributes="0" SourcePath="src\Owner\DataMember.java" SelfReg="false"/>
+    <ROW File="DataProduk.form_1" Component_="DashboardOwner.form" FileName="DATAPR~1.FOR|DataProduk.form" Attributes="0" SourcePath="src\Owner\DataProduk.form" SelfReg="false"/>
+    <ROW File="DataProduk.java" Component_="DashboardOwner.form" FileName="DATAPR~1.JAV|DataProduk.java" Attributes="0" SourcePath="src\Owner\DataProduk.java" SelfReg="false"/>
+    <ROW File="DataSupplier.form_1" Component_="DashboardOwner.form" FileName="DATASU~1.FOR|DataSupplier.form" Attributes="0" SourcePath="src\Owner\DataSupplier.form" SelfReg="false"/>
+    <ROW File="DataSupplier.java" Component_="DashboardOwner.form" FileName="DATASU~1.JAV|DataSupplier.java" Attributes="0" SourcePath="src\Owner\DataSupplier.java" SelfReg="false"/>
+    <ROW File="LaporanPendapatan.form_1" Component_="DashboardOwner.form" FileName="LAPORA~1.FOR|LaporanPendapatan.form" Attributes="0" SourcePath="src\Owner\LaporanPendapatan.form" SelfReg="false"/>
+    <ROW File="LaporanPendapatan.java" Component_="DashboardOwner.form" FileName="LAPORA~1.JAV|LaporanPendapatan.java" Attributes="0" SourcePath="src\Owner\LaporanPendapatan.java" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran.form_1" Component_="DashboardOwner.form" FileName="LAPORA~2.FOR|LaporanPengeluaran.form" Attributes="0" SourcePath="src\Owner\LaporanPengeluaran.form" SelfReg="false"/>
+    <ROW File="LaporanPengeluaran.java" Component_="DashboardOwner.form" FileName="LAPORA~2.JAV|LaporanPengeluaran.java" Attributes="0" SourcePath="src\Owner\LaporanPengeluaran.java" SelfReg="false"/>
+    <ROW File="MenuOwner.form_1" Component_="DashboardOwner.form" FileName="MENUOW~1.FOR|MenuOwner.form" Attributes="0" SourcePath="src\Owner\MenuOwner.form" SelfReg="false"/>
+    <ROW File="MenuOwner.java" Component_="DashboardOwner.form" FileName="MENUOW~1.JAV|MenuOwner.java" Attributes="0" SourcePath="src\Owner\MenuOwner.java" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli.form_1" Component_="BerhasilTransaksiBeli.form" FileName="BERHAS~1.FOR|BerhasilTransaksiBeli.form" Attributes="0" SourcePath="src\PopUp\BerhasilTransaksiBeli.form" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiBeli.java" Component_="BerhasilTransaksiBeli.form" FileName="BERHAS~1.JAV|BerhasilTransaksiBeli.java" Attributes="0" SourcePath="src\PopUp\BerhasilTransaksiBeli.java" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual.form_1" Component_="BerhasilTransaksiBeli.form" FileName="BERHAS~2.FOR|BerhasilTransaksiJual.form" Attributes="0" SourcePath="src\PopUp\BerhasilTransaksiJual.form" SelfReg="false"/>
+    <ROW File="BerhasilTransaksiJual.java" Component_="BerhasilTransaksiBeli.form" FileName="BERHAS~2.JAV|BerhasilTransaksiJual.java" Attributes="0" SourcePath="src\PopUp\BerhasilTransaksiJual.java" SelfReg="false"/>
+    <ROW File="DaftarKaryawan.form_1" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~1.FOR|DaftarKaryawan.form" Attributes="0" SourcePath="src\PopUp\DaftarKaryawan.form" SelfReg="false"/>
+    <ROW File="DaftarKaryawan.java" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~1.JAV|DaftarKaryawan.java" Attributes="0" SourcePath="src\PopUp\DaftarKaryawan.java" SelfReg="false"/>
+    <ROW File="DaftarMember.form_1" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~2.FOR|DaftarMember.form" Attributes="0" SourcePath="src\PopUp\DaftarMember.form" SelfReg="false"/>
+    <ROW File="DaftarMember.java" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~2.JAV|DaftarMember.java" Attributes="0" SourcePath="src\PopUp\DaftarMember.java" SelfReg="false"/>
+    <ROW File="DaftarProduk.form_1" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~3.FOR|DaftarProduk.form" Attributes="0" SourcePath="src\PopUp\DaftarProduk.form" SelfReg="false"/>
+    <ROW File="DaftarProduk.java" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~3.JAV|DaftarProduk.java" Attributes="0" SourcePath="src\PopUp\DaftarProduk.java" SelfReg="false"/>
+    <ROW File="DaftarSupplier.form_1" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~4.FOR|DaftarSupplier.form" Attributes="0" SourcePath="src\PopUp\DaftarSupplier.form" SelfReg="false"/>
+    <ROW File="DaftarSupplier.java" Component_="BerhasilTransaksiBeli.form" FileName="DAFTAR~4.JAV|DaftarSupplier.java" Attributes="0" SourcePath="src\PopUp\DaftarSupplier.java" SelfReg="false"/>
+    <ROW File="DetailTransaksiBeli.form_1" Component_="BerhasilTransaksiBeli.form" FileName="DETAIL~1.FOR|DetailTransaksiBeli.form" Attributes="0" SourcePath="src\PopUp\DetailTransaksiBeli.form" SelfReg="false"/>
+    <ROW File="DetailTransaksiBeli.java" Component_="BerhasilTransaksiBeli.form" FileName="DETAIL~1.JAV|DetailTransaksiBeli.java" Attributes="0" SourcePath="src\PopUp\DetailTransaksiBeli.java" SelfReg="false"/>
+    <ROW File="DetailTransaksiJual.form_1" Component_="BerhasilTransaksiBeli.form" FileName="DETAIL~2.FOR|DetailTransaksiJual.form" Attributes="0" SourcePath="src\PopUp\DetailTransaksiJual.form" SelfReg="false"/>
+    <ROW File="DetailTransaksiJual.java" Component_="BerhasilTransaksiBeli.form" FileName="DETAIL~2.JAV|DetailTransaksiJual.java" Attributes="0" SourcePath="src\PopUp\DetailTransaksiJual.java" SelfReg="false"/>
+    <ROW File="GantiPassword.form_1" Component_="BerhasilTransaksiBeli.form" FileName="GANTIP~1.FOR|GantiPassword.form" Attributes="0" SourcePath="src\PopUp\GantiPassword.form" SelfReg="false"/>
+    <ROW File="GantiPassword.java" Component_="BerhasilTransaksiBeli.form" FileName="GANTIP~1.JAV|GantiPassword.java" Attributes="0" SourcePath="src\PopUp\GantiPassword.java" SelfReg="false"/>
+    <ROW File="GetDataProduk.form_1" Component_="BerhasilTransaksiBeli.form" FileName="GETDAT~1.FOR|GetDataProduk.form" Attributes="0" SourcePath="src\PopUp\GetDataProduk.form" SelfReg="false"/>
+    <ROW File="GetDataProduk.java" Component_="BerhasilTransaksiBeli.form" FileName="GETDAT~1.JAV|GetDataProduk.java" Attributes="0" SourcePath="src\PopUp\GetDataProduk.java" SelfReg="false"/>
+    <ROW File="GetDataSupplier.form_1" Component_="BerhasilTransaksiBeli.form" FileName="GETDAT~2.FOR|GetDataSupplier.form" Attributes="0" SourcePath="src\PopUp\GetDataSupplier.form" SelfReg="false"/>
+    <ROW File="GetDataSupplier.java" Component_="BerhasilTransaksiBeli.form" FileName="GETDAT~2.JAV|GetDataSupplier.java" Attributes="0" SourcePath="src\PopUp\GetDataSupplier.java" SelfReg="false"/>
+    <ROW File="LupaPassword.form_3" Component_="BerhasilTransaksiBeli.form" FileName="LUPAPA~1.FOR|LupaPassword.form" Attributes="0" SourcePath="src\PopUp\LupaPassword.form" SelfReg="false"/>
+    <ROW File="LupaPassword.java_1" Component_="BerhasilTransaksiBeli.form" FileName="LUPAPA~1.JAV|LupaPassword.java" Attributes="0" SourcePath="src\PopUp\LupaPassword.java" SelfReg="false"/>
+    <ROW File="Profile.form_1" Component_="BerhasilTransaksiBeli.form" FileName="PROFIL~1.FOR|Profile.form" Attributes="0" SourcePath="src\PopUp\Profile.form" SelfReg="false"/>
+    <ROW File="Profile.java" Component_="BerhasilTransaksiBeli.form" FileName="PROFIL~1.JAV|Profile.java" Attributes="0" SourcePath="src\PopUp\Profile.java" SelfReg="false"/>
+    <ROW File="UpdateKaryawan.form_1" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~1.FOR|UpdateKaryawan.form" Attributes="0" SourcePath="src\PopUp\UpdateKaryawan.form" SelfReg="false"/>
+    <ROW File="UpdateKaryawan.java" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~1.JAV|UpdateKaryawan.java" Attributes="0" SourcePath="src\PopUp\UpdateKaryawan.java" SelfReg="false"/>
+    <ROW File="UpdateMember.form_1" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~2.FOR|UpdateMember.form" Attributes="0" SourcePath="src\PopUp\UpdateMember.form" SelfReg="false"/>
+    <ROW File="UpdateMember.java" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~2.JAV|UpdateMember.java" Attributes="0" SourcePath="src\PopUp\UpdateMember.java" SelfReg="false"/>
+    <ROW File="UpdateProduk.form_1" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~3.FOR|UpdateProduk.form" Attributes="0" SourcePath="src\PopUp\UpdateProduk.form" SelfReg="false"/>
+    <ROW File="UpdateProduk.java" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~3.JAV|UpdateProduk.java" Attributes="0" SourcePath="src\PopUp\UpdateProduk.java" SelfReg="false"/>
+    <ROW File="UpdateSupplier.form_1" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~4.FOR|UpdateSupplier.form" Attributes="0" SourcePath="src\PopUp\UpdateSupplier.form" SelfReg="false"/>
+    <ROW File="UpdateSupplier.java" Component_="BerhasilTransaksiBeli.form" FileName="UPDATE~4.JAV|UpdateSupplier.java" Attributes="0" SourcePath="src\PopUp\UpdateSupplier.java" SelfReg="false"/>
+    <ROW File="jfreechart1.5.0.jar_1" Component_="jfreechart1.5.0.jar" FileName="JFREEC~1.JAR|jfreechart-1.5.0.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\jfreechart-1.5.0.jar" SelfReg="false"/>
+    <ROW File="jcommon1.0.24.jar_1" Component_="jfreechart1.5.0.jar" FileName="JCOMMO~1.JAR|jcommon-1.0.24.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\jcommon-1.0.24.jar" SelfReg="false"/>
+    <ROW File="groovyall2.0.8.jar_1" Component_="jfreechart1.5.0.jar" FileName="GROOVY~1.JAR|groovy-all-2.0.8.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\groovy-all-2.0.8.jar" SelfReg="false"/>
+    <ROW File="jasperreportsfonts5.5.0.jar_1" Component_="jfreechart1.5.0.jar" FileName="JASPER~1.JAR|jasperreports-fonts-5.5.0.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\jasperreports-fonts-5.5.0.jar" SelfReg="false"/>
+    <ROW File="servletapi2.5.jar_1" Component_="jfreechart1.5.0.jar" FileName="SERVLE~1.JAR|servlet-api-2.5.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\servlet-api-2.5.jar" SelfReg="false"/>
+    <ROW File="commonsjavaflow20060411.jar_1" Component_="jfreechart1.5.0.jar" FileName="COMMON~1.JAR|commons-javaflow-20060411.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\commons-javaflow-20060411.jar" SelfReg="false"/>
+    <ROW File="commonslogging1.1.1.jar_1" Component_="jfreechart1.5.0.jar" FileName="COMMON~2.JAR|commons-logging-1.1.1.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\commons-logging-1.1.1.jar" SelfReg="false"/>
+    <ROW File="commonsdigester2.1.jar_1" Component_="jfreechart1.5.0.jar" FileName="COMMON~3.JAR|commons-digester-2.1.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\commons-digester-2.1.jar" SelfReg="false"/>
+    <ROW File="jasperreports5.5.0.jar_1" Component_="jfreechart1.5.0.jar" FileName="JASPER~2.JAR|jasperreports-5.5.0.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\jasperreports-5.5.0.jar" SelfReg="false"/>
+    <ROW File="commonscollections2.1.1.jar_1" Component_="jfreechart1.5.0.jar" FileName="COMMON~4.JAR|commons-collections-2.1.1.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\commons-collections-2.1.1.jar" SelfReg="false"/>
+    <ROW File="commonsbeanutils1.9.0.jar_1" Component_="jfreechart1.5.0.jar" FileName="COMMON~5.JAR|commons-beanutils-1.9.0.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\commons-beanutils-1.9.0.jar" SelfReg="false"/>
+    <ROW File="barcode.jar_1" Component_="jfreechart1.5.0.jar" FileName="barcode.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\barcode.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorjava8.0.27.jar" Component_="jfreechart1.5.0.jar" FileName="MYSQL-~1.JAR|mysql-connector-java-8.0.27.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\mysql-connector-java-8.0.27.jar" SelfReg="false"/>
+    <ROW File="jcalendar1.4.jar" Component_="jfreechart1.5.0.jar" FileName="JCALEN~1.JAR|jcalendar-1.4.jar" Attributes="0" SourcePath="C:\Users\laptophp\Downloads\jcalendar-1.4.jar" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="LogoAplikasi.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="e-Payment"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="applet.policy"/>
+    <ROW Feature_="MainFeature" Component_="builtjar.properties"/>
+    <ROW Feature_="MainFeature" Component_="netbeans_automatic_build"/>
+    <ROW Feature_="MainFeature" Component_="BASRENG0001.png"/>
+    <ROW Feature_="MainFeature" Component_="Nota.jasper"/>
+    <ROW Feature_="MainFeature" Component_="Login1.class"/>
+    <ROW Feature_="MainFeature" Component_="Dashboard.png"/>
+    <ROW Feature_="MainFeature" Component_="BerhasilEditData1.class"/>
+    <ROW Feature_="MainFeature" Component_="DashboardKaryawan1.class"/>
+    <ROW Feature_="MainFeature" Component_="BarChartPendapatan.class"/>
+    <ROW Feature_="MainFeature" Component_="DashboardOwner1.class"/>
+    <ROW Feature_="MainFeature" Component_="BerhasilTransaksiBeli1.class"/>
+    <ROW Feature_="MainFeature" Component_="ePayment.jar"/>
+    <ROW Feature_="MainFeature" Component_="AbsoluteLayout.jar"/>
+    <ROW Feature_="MainFeature" Component_="buildimpl.xml"/>
+    <ROW Feature_="MainFeature" Component_="config.properties"/>
+    <ROW Feature_="MainFeature" Component_="BASRENG0001.png_1"/>
+    <ROW Feature_="MainFeature" Component_="Nota.jasper_1"/>
+    <ROW Feature_="MainFeature" Component_="Login.form"/>
+    <ROW Feature_="MainFeature" Component_="Dashboard.png_1"/>
+    <ROW Feature_="MainFeature" Component_="BerhasilEditData.form"/>
+    <ROW Feature_="MainFeature" Component_="DashboardKaryawan.form"/>
+    <ROW Feature_="MainFeature" Component_="BarChartPendapatan.java"/>
+    <ROW Feature_="MainFeature" Component_="DashboardOwner.form"/>
+    <ROW Feature_="MainFeature" Component_="BerhasilTransaksiBeli.form"/>
+    <ROW Feature_="MainFeature" Component_="jfreechart1.5.0.jar"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="1398"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
